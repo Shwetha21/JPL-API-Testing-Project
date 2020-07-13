@@ -62,6 +62,16 @@
     <Reference Include="System.Web" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MissionDesignApi\MissionDesignApiService\DataHandling\MissionDesignDTO.cs" />
+    <Compile Include="MissionDesignApi\MissionDesignApiService\DataHandling\MissionDesignModel.cs" />
+    <Compile Include="MissionDesignApi\MissionDesignApiService\HTTPManager\MissionDesignApiManager.cs" />
+    <Compile Include="MissionDesignApi\MissionDesignApiService\MissionDesignService.cs" />
+    <Compile Include="MissionDesignApi\Tests\MissionDesignTests.cs" />
+    <Compile Include="SbdbApi\SbdbApiService\SbdbService.cs" />
+    <Compile Include="SbdbApi\SbdbApiService\DataHandling\SbdbDTO.cs" />
+    <Compile Include="SbdbApi\SbdbApiService\DataHandling\SbdbModel.cs" />
+    <Compile Include="SbdbApi\SbdbApiService\HTTPManager\SbdbApiManager.cs" />
+    <Compile Include="SbdbApi\Tests\SbdbTests.cs" />
     <Compile Include="CadApi\Tests\CADTests.cs" />
     <Compile Include="ConfigReader.cs" />
     <Compile Include="CadApi\CadApiService\CADAPIService.cs" />
