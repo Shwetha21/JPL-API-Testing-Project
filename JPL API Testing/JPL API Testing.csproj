@@ -85,7 +85,7 @@
     <Compile Include="NHATSApi\NHATSTestsFolder\NHATSTests.cs" />
     <Compile Include="FireballApi\FireballAPIService\DataHandling\FireballModel.cs" />
     <Compile Include="FireballApi\FireballAPIService\DataHandling\FireballDTO.cs" />
-	<Compile Include="FireballApi\FireballAPIService\FBAPIService.cs" />
+    <Compile Include="FireballApi\FireballAPIService\FBAPIService.cs" />
     <Compile Include="FireballApi\FireballAPIService\HTTPManager\FireballAPIManager.cs" />
     <Compile Include="FireballApi\Tests\FireballAPITests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -93,6 +93,7 @@
   <ItemGroup>
     <None Include="app.config" />
     <None Include="packages.config" />
+    <None Include="README.md" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
