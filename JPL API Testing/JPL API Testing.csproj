@@ -68,6 +68,11 @@
     <Compile Include="CadApi\CadApiService\DataHandling\CADDTO.cs" />
     <Compile Include="CadApi\CadApiService\DataHandling\CADModel.cs" />
     <Compile Include="CadApi\CadApiService\HTTPManager\CADAPIManager.cs" />
+    <Compile Include="NHATSApi\NHATSApiService\DataHandling\NHATSDTO.cs" />
+    <Compile Include="NHATSApi\NHATSApiService\DataHandling\NHATSModel.cs" />
+    <Compile Include="NHATSApi\NHATSApiService\NHATSAPIServices.cs" />
+    <Compile Include="NHATSApi\NHATSApiService\HTTPManager\NHATSAPIManager.cs" />
+    <Compile Include="NHATSApi\NHATSTestsFolder\NHATSTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
