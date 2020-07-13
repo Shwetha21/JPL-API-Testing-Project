@@ -83,6 +83,11 @@
     <Compile Include="NHATSApi\NHATSApiService\NHATSAPIServices.cs" />
     <Compile Include="NHATSApi\NHATSApiService\HTTPManager\NHATSAPIManager.cs" />
     <Compile Include="NHATSApi\NHATSTestsFolder\NHATSTests.cs" />
+    <Compile Include="FireballApi\FireballAPIService\DataHandling\FireballModel.cs" />
+    <Compile Include="FireballApi\FireballAPIService\DataHandling\FireballDTO.cs" />
+	<Compile Include="FireballApi\FireballAPIService\FBAPIService.cs" />
+    <Compile Include="FireballApi\FireballAPIService\HTTPManager\FireballAPIManager.cs" />
+    <Compile Include="FireballApi\Tests\FireballAPITests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
