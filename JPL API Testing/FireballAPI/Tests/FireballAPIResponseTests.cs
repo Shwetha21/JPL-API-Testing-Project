@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace JPL_API_Testing.FireballAPI.Tests
 {
-    public class FireballAPITests
+    public class FireballAPIResponseTests
     {
         FBAPIService _fBAPIService = new FBAPIService();
 
