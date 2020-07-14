@@ -17,5 +17,12 @@ namespace JPL_API_Testing.FireballAPI.FireballAPIService.HTTPManager
             var response = client.Execute(request);
             return response.Content;
         }
+
+        public string GetFireball(int recLimit, string dateMin, string dateMax)
+        {
+            var request = new RestRequest($"fireball.api?date-min={dateMin}&date-max={dateMax}&limit={recLimit}", Method.GET);
+            var response = client.Execute(request);
+            return response.Content;
+        }
     }
 }
