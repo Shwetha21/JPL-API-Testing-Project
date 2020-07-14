@@ -85,10 +85,15 @@
     <Compile Include="NHATSApi\NHATSTestsFolder\NHATSTests.cs" />
     <Compile Include="FireballApi\FireballAPIService\DataHandling\FireballModel.cs" />
     <Compile Include="FireballApi\FireballAPIService\DataHandling\FireballDTO.cs" />
-	<Compile Include="FireballApi\FireballAPIService\FBAPIService.cs" />
+    <Compile Include="FireballApi\FireballAPIService\FBAPIService.cs" />
     <Compile Include="FireballApi\FireballAPIService\HTTPManager\FireballAPIManager.cs" />
     <Compile Include="FireballApi\Tests\FireballAPITests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ScoutDataApi\ScoutDataApiService\DataHandling\ScoutDTO.cs" />
+    <Compile Include="ScoutDataApi\ScoutDataApiService\DataHandling\ScoutModel.cs" />
+    <Compile Include="ScoutDataApi\ScoutDataApiService\HTTPManager\ScoutDataApiManager.cs" />
+    <Compile Include="ScoutDataApi\ScoutDataApiService\ScoutDataApiService.cs" />
+    <Compile Include="ScoutDataApi\Tests\ScoutTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
