@@ -48,4 +48,4 @@ it's respective stories & epics.
 <img src="Sprint1Api.PNG" width="3000" />
 
 ##### After Sprint 1
-<img src="Sprint1AfterApi.png" width="3000" />
+<img src="Sprint1AfterApi.PNG" width="3000" />
