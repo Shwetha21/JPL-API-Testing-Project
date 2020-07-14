@@ -22,5 +22,16 @@ namespace JPL_API_Testing.NHATSApi.NHATSTestsFolder
             Assert.That(res.Contains("Nereus"), Is.True);
         }
 
+        [Test]
+        public void CheckingWhetherTheDataObtainedIsRecentByCheckingTheVersiion()
+        {
+            Assert.That(nHATSAPIServices.nhatsDTO.NHATSData.signature.version, Is.EqualTo("1.3"));
+        }
+
+        [Test]
+        public void CheckingWhetherTheCountvalueIsNotNull()
+        {
+            Assert.That(nHATSAPIServices.nhatsDTO.NHATSData.count, Is.Not.Null);
+        }
     }
 }
