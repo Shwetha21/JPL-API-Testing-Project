@@ -29,9 +29,9 @@ namespace JPL_API_Testing.NHATSApi.NHATSTestsFolder
         }
 
         [Test]
-        public void CheckingWhetherTheCountvaluereturnedmatchesWiththeresult()
+        public void CheckingWhetherTheCountvalueIsNotNull()
         {
-            Assert.That(nHATSAPIServices.nhatsDTO.NHATSData.count, Is.EqualTo("3092"));
+            Assert.That(nHATSAPIServices.nhatsDTO.NHATSData.count, Is.Not.Null);
         }
     }
 }
