@@ -1,11 +1,11 @@
 ﻿using JPL_API_Testing.FireballAPI.FireballAPIService;
 using NUnit.Framework;
 
-namespace JPL_API_Testing.FireballAPI.Tests
+namespace JPL_API_Testing.FireballAPI
 {
     public class FireballAPIDataTests
     {
-        FBAPIService _fBAPIService = new FBAPIService();
+        private FBAPIService _fBAPIService = new FBAPIService();
 
         [Test]
         public void CallingAPIReturns_PopulatedDate()
@@ -42,6 +42,7 @@ namespace JPL_API_Testing.FireballAPI.Tests
         {
             Assert.That(_fBAPIService.fireballData[0].Lon, Is.Not.EqualTo(""));
         }
+
         [Test]
         public void CallingAPIReturns_PopulatedLondir()
         {

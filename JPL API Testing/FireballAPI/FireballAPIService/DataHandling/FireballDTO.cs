@@ -1,5 +1,4 @@
-﻿using JPL_API_Testing.FireballApi.FireballAPIService.DataHandling;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 using System.Collections.Generic;
 
 namespace JPL_API_Testing.FireballAPI.FireballAPIService.DataHandling
