@@ -23,7 +23,7 @@ namespace JPL_API_Testing
         [Test]
         public void CallingAPI_CorrectCountResponse()
         {
-            Assert.That(_scoutDataApiService.ScoutDataDTO.ScoutData.count, Is.EqualTo("24"));
+            Assert.That(_scoutDataApiService.ScoutDataDTO.ScoutData.count, Is.EqualTo("22"));
         }
 
 
