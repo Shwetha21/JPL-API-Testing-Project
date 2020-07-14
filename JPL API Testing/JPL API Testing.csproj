@@ -71,7 +71,7 @@
     <Compile Include="SbdbApi\SbdbApiService\DataHandling\SbdbDTO.cs" />
     <Compile Include="SbdbApi\SbdbApiService\DataHandling\SbdbModel.cs" />
     <Compile Include="SbdbApi\SbdbApiService\HTTPManager\SbdbApiManager.cs" />
-    <Compile Include="SbdbApi\Tests\SbdbTests.cs" />
+    <Compile Include="SbdbApi\Tests\SbdbGeneralResponseTests.cs" />
     <Compile Include="CadApi\Tests\CADTests.cs" />
     <Compile Include="ConfigReader.cs" />
     <Compile Include="CadApi\CadApiService\CADAPIService.cs" />
@@ -89,6 +89,9 @@
     <Compile Include="FireballApi\FireballAPIService\HTTPManager\FireballAPIManager.cs" />
     <Compile Include="FireballApi\Tests\FireballAPITests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SbdbApi\Tests\SbdbObjectTests.cs" />
+    <Compile Include="SbdbApi\Tests\SbdbOrbitTests.cs" />
+    <Compile Include="SbdbApi\Tests\SbdbSignatureTests.cs" />
     <Compile Include="ScoutDataApi\ScoutDataApiService\DataHandling\ScoutDTO.cs" />
     <Compile Include="ScoutDataApi\ScoutDataApiService\DataHandling\ScoutModel.cs" />
     <Compile Include="ScoutDataApi\ScoutDataApiService\HTTPManager\ScoutDataApiManager.cs" />
