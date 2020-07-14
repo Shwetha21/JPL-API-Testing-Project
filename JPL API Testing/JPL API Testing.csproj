@@ -71,6 +71,8 @@
     <Compile Include="MissionDesignApi\MissionDesignApiService\HTTPManager\MissionDesignApiManager.cs" />
     <Compile Include="MissionDesignApi\MissionDesignApiService\MissionDesignService.cs" />
     <Compile Include="MissionDesignApi\Tests\MissionDesignTests.cs" />
+    <Compile Include="NHATSApi\NHATSApiService\DataHandling\NHATSSpecificObjectModel.cs" />
+    <Compile Include="NHATSApi\NHATSTestsFolder\NHATSSpecificAsteroidTests.cs" />
     <Compile Include="SbdbApi\SbdbApiService\SbdbService.cs" />
     <Compile Include="SbdbApi\SbdbApiService\DataHandling\SbdbDTO.cs" />
     <Compile Include="SbdbApi\SbdbApiService\DataHandling\SbdbModel.cs" />
