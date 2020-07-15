@@ -62,15 +62,19 @@
     <Reference Include="System.Web" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CadApi\CadApiService\DataHandling\CADKeyValues.cs" />
+    <Compile Include="CadApi\Tests\CADDataTests.cs" />
     <Compile Include="FireballAPI\FireballAPIService\DataHandling\FireballKeyValues.cs" />
     <Compile Include="FireballAPI\Tests\FireballAPIDataTests.cs" />
     <Compile Include="FireballAPI\Tests\FireballAPILimitQuery.cs" />
     <Compile Include="FireballAPI\Tests\FireballAPIResponseTests.cs" />
     <Compile Include="MissionDesignApi\MissionDesignApiService\DataHandling\MissionDesignDTO.cs" />
+    <Compile Include="MissionDesignApi\MissionDesignApiService\DataHandling\MissionDesignKeyValues.cs" />
     <Compile Include="MissionDesignApi\MissionDesignApiService\DataHandling\MissionDesignModel.cs" />
     <Compile Include="MissionDesignApi\MissionDesignApiService\HTTPManager\MissionDesignApiManager.cs" />
     <Compile Include="MissionDesignApi\MissionDesignApiService\MissionDesignService.cs" />
-    <Compile Include="MissionDesignApi\Tests\MissionDesignTests.cs" />
+    <Compile Include="MissionDesignApi\Tests\MissionDesignDataTests.cs" />
+    <Compile Include="MissionDesignApi\Tests\MissionDesignGeneralTests.cs" />
     <Compile Include="NHATSApi\NHATSApiService\DataHandling\NHATSSpecificObjectModel.cs" />
     <Compile Include="NHATSApi\NHATSTestsFolder\NHATSSpecificAsteroidTests.cs" />
     <Compile Include="SbdbApi\SbdbApiService\SbdbService.cs" />
@@ -79,7 +83,7 @@
     <Compile Include="SbdbApi\SbdbApiService\HTTPManager\SbdbApiManager.cs" />
     <Compile Include="SbdbApi\Tests\SbdbAmorSubjectTests.cs" />
     <Compile Include="SbdbApi\Tests\SbdbGeneralResponseTests.cs" />
-    <Compile Include="CadApi\Tests\CADTests.cs" />
+    <Compile Include="CadApi\Tests\CADGeneralTests.cs" />
     <Compile Include="ConfigReader.cs" />
     <Compile Include="CadApi\CadApiService\CADAPIService.cs" />
     <Compile Include="CadApi\CadApiService\DataHandling\CADDTO.cs" />
