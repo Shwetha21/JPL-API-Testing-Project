@@ -23,7 +23,7 @@ namespace JPL_API_Testing
         [Test]
         public void CallingAPI_CorrectCountResponse()
         {
-            Assert.That(_sentryDataApiService.SentryDataDTO.SentryData.count, Is.EqualTo("1021"));
+            Assert.That(_sentryDataApiService.SentryDataDTO.SentryData.count, Is.Not.Null.Or.Zero);
         }
 
 
