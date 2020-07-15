@@ -72,10 +72,5 @@ namespace JPL_API_Testing.SbdbApi.Tests
         {
             Assert.That(_sbdbDataResponse.json_sbdb["object"]["orbit_class"].ToString(), Does.Contain("code"));
         }
-        [Test]
-        public void TestignTest()
-        {
-            Assert.That(_sbdbDataResponse.sbdbDTO.SbdbData._object, Is.EqualTo("green"));
-        }
     }
 }
