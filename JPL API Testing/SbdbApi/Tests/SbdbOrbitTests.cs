@@ -10,7 +10,7 @@ namespace JPL_API_Testing.SbdbApi.Tests
 {
     class SbdbOrbitTests
     {
-        private SbdbService _sbdbDataResponse = new SbdbService();
+        private SbdbService _sbdbDataResponse = new SbdbService("2015ab");
 
         [Test]
         public void OrbitClassHasCorrectSource()                //Source of the information

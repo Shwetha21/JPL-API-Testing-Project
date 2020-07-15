@@ -10,13 +10,7 @@ namespace JPL_API_Testing.SbdbApi.Tests
 {
     class SbdbObjectTests
     {
-        private SbdbService _sbdbDataResponse = new SbdbService();
-        //[Test]
-        //public void CallingAPI_CorrectSignatureResponse()
-        //{
-        //    Assert.That(_sbdbDataResponse.sbdbDTO.SbdbData.signature, Has.Property("version"));
-        //    Assert.That(_sbdbDataResponse.sbdbDTO.SbdbData.signature, Has.Property("source"));
-        //}
+        private SbdbService _sbdbDataResponse = new SbdbService("2015ab");
         [Test]
         public void ObjectFieldContainsNEOStatement()           //NEO - Near Earth Object
         {

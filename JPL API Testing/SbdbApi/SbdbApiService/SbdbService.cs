@@ -12,9 +12,9 @@ namespace JPL_API_Testing.SbdbApiService
         public string sbdbData;
         public JObject json_sbdb;
 
-        public SbdbService()
+        public SbdbService(string asteroid)
         {
-            sbdbData = sbdbManager.GetSmallBodyData();
+            sbdbData = sbdbManager.GetSmallBodyData(asteroid);
             sbdbDTO.DeserializeSbdbData(sbdbData);
             json_sbdb = JsonConvert.DeserializeObject<JObject>(sbdbData);
         }
