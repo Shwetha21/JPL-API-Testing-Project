@@ -20,5 +20,13 @@ namespace JPL_API_Testing.JPLAPIService
 
             json_nhats = JsonConvert.DeserializeObject<JObject>(nhatsData);
         }
+
+        public NHATSAPIServices(string asteroid)
+        {
+            nhatsData = cadManager.GetDataOfSpecificNearEarthAsteroid(asteroid);
+            nhatsDTO.DesirealiseNHATSSpecificData(nhatsData);
+
+            json_nhats = JsonConvert.DeserializeObject<JObject>(nhatsData);
+        }
     }
 }

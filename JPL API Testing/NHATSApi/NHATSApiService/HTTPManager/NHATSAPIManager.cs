@@ -16,5 +16,12 @@ namespace JPL_API_Testing.JPLAPIService.HTTPManager
             var response = client.Execute(request, Method.GET);
             return response.Content;
         }
+
+        public string GetDataOfSpecificNearEarthAsteroid(string asteroid)
+        {
+            var request = new RestRequest($"nhats.api?des={asteroid}");
+            var response = client.Execute(request, Method.GET);
+            return response.Content;
+        }
     }
 }

@@ -33,5 +33,24 @@ namespace JPL_API_Testing.NHATSApi.NHATSTestsFolder
         {
             Assert.That(nHATSAPIServices.nhatsDTO.NHATSData.count, Is.Not.Null);
         }
+
+        [Test]
+        public void CheckingWhetherTheHValueOfAlltheObjectsAreGreaterThan15()
+        {
+            foreach( var i in nHATSAPIServices.nhatsDTO.NHATSData.data)
+            { 
+                Assert.That(i.h, Is.GreaterThan("15")); 
+            }
+            
+        }
+
+        [Test]
+        public void CheckingWhetherTheOCCrangeIsInBetween0and10()
+        {
+            foreach( var i in nHATSAPIServices.nhatsDTO.NHATSData.data)
+            {
+                Assert.That(int.Parse(i.occ), Is.InRange(0,10));
+            }
+        }
     }
 }

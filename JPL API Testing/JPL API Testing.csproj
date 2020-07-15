@@ -64,18 +64,22 @@
   <ItemGroup>
     <Compile Include="FireballAPI\FireballAPIService\DataHandling\FireballKeyValues.cs" />
     <Compile Include="FireballAPI\Tests\FireballAPIDataTests.cs" />
-    <Compile Include="FireballAPI\Tests\FireballAPILimitQuery.cs" />
+    <Compile Include="FireballAPI\Tests\FireballAPIDateQueryTests.cs" />
+    <Compile Include="FireballAPI\Tests\FireballAPILimitQueryTests.cs" />
     <Compile Include="FireballAPI\Tests\FireballAPIResponseTests.cs" />
     <Compile Include="MissionDesignApi\MissionDesignApiService\DataHandling\MissionDesignDTO.cs" />
     <Compile Include="MissionDesignApi\MissionDesignApiService\DataHandling\MissionDesignModel.cs" />
     <Compile Include="MissionDesignApi\MissionDesignApiService\HTTPManager\MissionDesignApiManager.cs" />
     <Compile Include="MissionDesignApi\MissionDesignApiService\MissionDesignService.cs" />
     <Compile Include="MissionDesignApi\Tests\MissionDesignTests.cs" />
+    <Compile Include="NHATSApi\NHATSApiService\DataHandling\NHATSSpecificObjectModel.cs" />
+    <Compile Include="NHATSApi\NHATSTestsFolder\NHATSSpecificAsteroidTests.cs" />
     <Compile Include="SbdbApi\SbdbApiService\SbdbService.cs" />
     <Compile Include="SbdbApi\SbdbApiService\DataHandling\SbdbDTO.cs" />
     <Compile Include="SbdbApi\SbdbApiService\DataHandling\SbdbModel.cs" />
     <Compile Include="SbdbApi\SbdbApiService\HTTPManager\SbdbApiManager.cs" />
-    <Compile Include="SbdbApi\Tests\SbdbTests.cs" />
+    <Compile Include="SbdbApi\Tests\SbdbAmorSubjectTests.cs" />
+    <Compile Include="SbdbApi\Tests\SbdbGeneralResponseTests.cs" />
     <Compile Include="CadApi\Tests\CADTests.cs" />
     <Compile Include="ConfigReader.cs" />
     <Compile Include="CadApi\CadApiService\CADAPIService.cs" />
@@ -92,6 +96,9 @@
     <Compile Include="FireballAPI\FireballAPIService\FBAPIService.cs" />
     <Compile Include="FireballAPI\FireballAPIService\HTTPManager\FireballAPIManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SbdbApi\Tests\SbdbObjectTests.cs" />
+    <Compile Include="SbdbApi\Tests\SbdbOrbitTests.cs" />
+    <Compile Include="SbdbApi\Tests\SbdbSignatureTests.cs" />
     <Compile Include="ScoutDataApi\ScoutDataApiService\DataHandling\ScoutDTO.cs" />
     <Compile Include="ScoutDataApi\ScoutDataApiService\DataHandling\ScoutModel.cs" />
     <Compile Include="ScoutDataApi\ScoutDataApiService\HTTPManager\ScoutDataApiManager.cs" />
