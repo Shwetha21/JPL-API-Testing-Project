@@ -78,6 +78,7 @@
     <Compile Include="SbdbApi\SbdbApiService\DataHandling\SbdbDTO.cs" />
     <Compile Include="SbdbApi\SbdbApiService\DataHandling\SbdbModel.cs" />
     <Compile Include="SbdbApi\SbdbApiService\HTTPManager\SbdbApiManager.cs" />
+    <Compile Include="SbdbApi\Tests\SbdbAmorSubjectTests.cs" />
     <Compile Include="SbdbApi\Tests\SbdbGeneralResponseTests.cs" />
     <Compile Include="CadApi\Tests\CADTests.cs" />
     <Compile Include="ConfigReader.cs" />

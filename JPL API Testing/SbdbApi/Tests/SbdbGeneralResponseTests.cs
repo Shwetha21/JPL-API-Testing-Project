@@ -11,7 +11,7 @@ namespace JPL_API_Testing
 {
     public class SbdbTests
     {
-        private SbdbService _sbdbDataResponse = new SbdbService();
+        private SbdbService _sbdbDataResponse = new SbdbService("2015ab");
 
         [Test]
         public void CallingAPI_ResponseContainsSignatureField()
