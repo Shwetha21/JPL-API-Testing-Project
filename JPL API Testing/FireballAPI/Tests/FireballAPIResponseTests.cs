@@ -2,11 +2,11 @@
 using NUnit.Framework;
 using System.Linq;
 
-namespace JPL_API_Testing.FireballAPI.Tests
+namespace JPL_API_Testing.FireballAPI
 {
     public class FireballAPIResponseTests
     {
-        FBAPIService _fBAPIService = new FBAPIService();
+        private FBAPIService _fBAPIService = new FBAPIService();
 
         [Test]
         public void CallingAPIReturns_CorrectSource()

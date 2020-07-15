@@ -1,5 +1,4 @@
-﻿using JPL_API_Testing.FireballApi.FireballAPIService.DataHandling;
-using JPL_API_Testing.FireballAPI.FireballAPIService.DataHandling;
+﻿using JPL_API_Testing.FireballAPI.FireballAPIService.DataHandling;
 using JPL_API_Testing.FireballAPI.FireballAPIService.HTTPManager;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
@@ -11,7 +10,6 @@ namespace JPL_API_Testing.FireballAPI.FireballAPIService
     {
         public FireballAPIManager fireballAPIManager = new FireballAPIManager();
         public FireballDTO fireballDTO = new FireballDTO();
-        public FireballModel fireballModel;
         public string fireballResponse;
         public List<FireballKeyValues> fireballData;
         public JObject json_fireball;
@@ -19,6 +17,15 @@ namespace JPL_API_Testing.FireballAPI.FireballAPIService
         public FBAPIService()
         {
             fireballResponse = fireballAPIManager.GetFireball();
+            fireballDTO.DeserialiseResponse(fireballResponse);
+            json_fireball = JsonConvert.DeserializeObject<JObject>(fireballResponse);
+
+            fireballData = GetFireballData();
+        }
+
+        public FBAPIService(int limit, string dateMin, string dateMax)
+        {
+            fireballResponse = fireballAPIManager.GetFireball(limit, dateMin, dateMax);
             fireballDTO.DeserialiseResponse(fireballResponse);
             json_fireball = JsonConvert.DeserializeObject<JObject>(fireballResponse);
 

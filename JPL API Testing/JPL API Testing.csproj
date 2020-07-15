@@ -62,9 +62,10 @@
     <Reference Include="System.Web" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FireballApi\FireballAPIService\DataHandling\FireballKeyValues.cs" />
-    <Compile Include="FireballApi\Tests\FireballAPIDataTests.cs" />
-    <Compile Include="FireballApi\Tests\FireballAPIResponseTests.cs" />
+    <Compile Include="FireballAPI\FireballAPIService\DataHandling\FireballKeyValues.cs" />
+    <Compile Include="FireballAPI\Tests\FireballAPIDataTests.cs" />
+    <Compile Include="FireballAPI\Tests\FireballAPILimitQuery.cs" />
+    <Compile Include="FireballAPI\Tests\FireballAPIResponseTests.cs" />
     <Compile Include="MissionDesignApi\MissionDesignApiService\DataHandling\MissionDesignDTO.cs" />
     <Compile Include="MissionDesignApi\MissionDesignApiService\DataHandling\MissionDesignModel.cs" />
     <Compile Include="MissionDesignApi\MissionDesignApiService\HTTPManager\MissionDesignApiManager.cs" />
@@ -86,10 +87,10 @@
     <Compile Include="NHATSApi\NHATSApiService\NHATSAPIServices.cs" />
     <Compile Include="NHATSApi\NHATSApiService\HTTPManager\NHATSAPIManager.cs" />
     <Compile Include="NHATSApi\NHATSTestsFolder\NHATSTests.cs" />
-    <Compile Include="FireballApi\FireballAPIService\DataHandling\FireballModel.cs" />
-    <Compile Include="FireballApi\FireballAPIService\DataHandling\FireballDTO.cs" />
-    <Compile Include="FireballApi\FireballAPIService\FBAPIService.cs" />
-    <Compile Include="FireballApi\FireballAPIService\HTTPManager\FireballAPIManager.cs" />
+    <Compile Include="FireballAPI\FireballAPIService\DataHandling\FireballModel.cs" />
+    <Compile Include="FireballAPI\FireballAPIService\DataHandling\FireballDTO.cs" />
+    <Compile Include="FireballAPI\FireballAPIService\FBAPIService.cs" />
+    <Compile Include="FireballAPI\FireballAPIService\HTTPManager\FireballAPIManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ScoutDataApi\ScoutDataApiService\DataHandling\ScoutDTO.cs" />
     <Compile Include="ScoutDataApi\ScoutDataApiService\DataHandling\ScoutModel.cs" />
