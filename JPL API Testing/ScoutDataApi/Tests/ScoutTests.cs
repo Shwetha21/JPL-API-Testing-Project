@@ -9,6 +9,14 @@ namespace JPL_API_Testing
         ScoutDataAPIService _scoutDataApiService = new ScoutDataAPIService();
 
         [Test]
+        public void CallingAPI_ResponseContainsAllRequiredFields()
+        {
+            Assert.That(_scoutDataApiService.ScoutDataDTO.ScoutData, Has.Property("signature"));
+            Assert.That(_scoutDataApiService.ScoutDataDTO.ScoutData, Has.Property("data"));
+            Assert.That(_scoutDataApiService.ScoutDataDTO.ScoutData, Has.Property("count"));
+        }
+
+        [Test]
         public void CallingAPI_CorrectVersionResponse()
         {
             Assert.That(_scoutDataApiService.ScoutDataDTO.ScoutData.signature.version, Is.EqualTo("1.2"));
