@@ -57,11 +57,6 @@ namespace JPL_API_Testing.SbdbApi.Tests
         {
             Assert.That(_sbdbDataResponse.sbdbDTO.SbdbData.orbit, Has.Property("orbit_id"));
         }
-        //[Test]
-        //public void OrbitClassObjectId_MatchesObjectClassOrbitId()
-        //{
-        //    Assert.That(_sbdbDataResponse.sbdbDTO.SbdbData.orbit.orbit_id, Is.EqualTo(_sbdbDataResponse.sbdbDTO.SbdbData._object.orbit_id));
-        //}
         [Test]
         public void OrbitClassHasProducterName()
         {
