@@ -27,9 +27,9 @@ namespace JPL_API_Testing.FireballAPI.FireballAPIService
             fireballDTO.DeserialiseResponse(fireballResponse);
         }
 
-        public FBAPIService(int limit, string dateMin, string dateMax)
+        public FBAPIService(string dateMin, string dateMax)
         {
-            fireballResponse = fireballAPIManager.GetFireball(limit, dateMin, dateMax);
+            fireballResponse = fireballAPIManager.GetFireball(dateMin, dateMax);
             fireballDTO.DeserialiseResponse(fireballResponse);
 
             fireballData = GetFireballData();
