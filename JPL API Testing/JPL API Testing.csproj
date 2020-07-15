@@ -98,8 +98,10 @@
     <Compile Include="ScoutDataApi\Tests\ScoutTests.cs" />
     <Compile Include="SentryAPI\SentryDataApiService\DataHandling\SentryDTO.cs" />
     <Compile Include="SentryAPI\SentryDataApiService\DataHandling\SentryModel.cs" />
+    <Compile Include="SentryAPI\SentryDataApiService\DataHandling\SentryspkModel.cs" />
     <Compile Include="SentryAPI\SentryDataApiService\HTTPManager\SentryDataAPIManager.cs" />
     <Compile Include="SentryAPI\SentryDataApiService\SentryDataApiService.cs" />
+    <Compile Include="SentryAPI\Tests\SentryspkTests.cs" />
     <Compile Include="SentryAPI\Tests\SentryTests.cs" />
   </ItemGroup>
   <ItemGroup>
