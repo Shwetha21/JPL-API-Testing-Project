@@ -65,7 +65,7 @@ namespace JPL_API_Testing
         [Test]
         public void checkPdate()
         {
-            Assert.That(_sentryDataApiService.SentryDataDTO.spkData.summary.pdate, Is.EqualTo("2020-07-14 17:55:01"));
+            Assert.That(_sentryDataApiService.SentryDataDTO.spkData.summary.pdate, Is.Not.Null.Or.Zero);
         }
 
         [Test]
