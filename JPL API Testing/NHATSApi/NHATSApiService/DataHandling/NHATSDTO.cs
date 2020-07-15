@@ -10,6 +10,7 @@ namespace JPL_API_Testing.NHATSApi.NHATSApiService.DataHandling
 
         public NHATSSpecificRoot NHATSSpecificData { get; set; }
 
+
         public void DeserializeNHATSData(string NHATSResponse)
         {
             NHATSData = JsonConvert.DeserializeObject<NHATSRoot>(NHATSResponse);
@@ -19,5 +20,7 @@ namespace JPL_API_Testing.NHATSApi.NHATSApiService.DataHandling
         {
             NHATSSpecificData = JsonConvert.DeserializeObject<NHATSSpecificRoot>(NHATSSpecificResponse);
         }
+
+        
     }
 }

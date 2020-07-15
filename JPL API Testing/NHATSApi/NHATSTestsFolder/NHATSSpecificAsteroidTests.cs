@@ -8,6 +8,8 @@ namespace JPL_API_Testing.NHATSApi.NHATSTestsFolder
     {
         private NHATSAPIServices nHATSAPIServices = new NHATSAPIServices("2000%20SG344");
         private NHATSAPIServices _nhatsServiceforOrpheus = new NHATSAPIServices("3361");
+        private NHATSAPIServices _nhatsservivenullasteroid = new NHATSAPIServices("");
+        private NHATSAPIServices _invalidnhats = new NHATSAPIServices("134");
 
         [Test]
         public void CheckingWhetherTheDataObtainedIsOf2000SG344Asteroid()
@@ -93,6 +95,22 @@ namespace JPL_API_Testing.NHATSApi.NHATSTestsFolder
             Assert.That(_nhatsServiceforOrpheus.nhatsDTO.NHATSSpecificData.min_dur_traj.launch, Is.EqualTo("2021-11-15"));
         }
 
+        [Test]
+        public void CheckingForBadRequestresponseWhentheDesValueIsNull()
+        {
+            Assert.That(_nhatsservivenullasteroid.nhatsData, Does.Contain("400"));
+        }
 
+        [Test]
+        public void CheckingFortheMessageForBadResponse()
+        {
+            Assert.That(_nhatsservivenullasteroid.nhatsData, Does.Contain("invalid character in designation"));
+        }
+
+        [Test]
+        public void CheckingForErrorMessage()
+        {
+            Assert.That(_invalidnhats.nhatsData, Does.Contain("specified NHATS object not found"));
+        }
     }
 }
