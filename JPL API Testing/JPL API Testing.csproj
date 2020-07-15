@@ -64,7 +64,8 @@
   <ItemGroup>
     <Compile Include="FireballAPI\FireballAPIService\DataHandling\FireballKeyValues.cs" />
     <Compile Include="FireballAPI\Tests\FireballAPIDataTests.cs" />
-    <Compile Include="FireballAPI\Tests\FireballAPILimitQuery.cs" />
+    <Compile Include="FireballAPI\Tests\FireballAPIDateQueryTests.cs" />
+    <Compile Include="FireballAPI\Tests\FireballAPILimitQueryTests.cs" />
     <Compile Include="FireballAPI\Tests\FireballAPIResponseTests.cs" />
     <Compile Include="MissionDesignApi\MissionDesignApiService\DataHandling\MissionDesignDTO.cs" />
     <Compile Include="MissionDesignApi\MissionDesignApiService\DataHandling\MissionDesignModel.cs" />
