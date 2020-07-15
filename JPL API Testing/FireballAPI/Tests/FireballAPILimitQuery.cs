@@ -5,66 +5,33 @@ namespace JPL_API_Testing.FireballAPI
 {
     public class FireballAPILimitQuery
     {
-        private FBAPIService _fBAPIService = new FBAPIService(1, "2019-11-28", "2019-11-29");
+        private FBAPIService _fBAPIServiceLimitOne = new FBAPIService(1);
+        private FBAPIService _fBAPIServiceLimitFive = new FBAPIService(5);
+        private FBAPIService _fBAPIServiceLimitTwelve = new FBAPIService(12);
+        private FBAPIService _fBAPIServiceLimitThrityFive = new FBAPIService(35);
 
         [Test]
         public void CallingAPIReturns_LimitShouldBeOne()
         {
-            Assert.That(_fBAPIService.fireballDTO.FireballModel.count, Is.EqualTo("1"));
+            Assert.That(_fBAPIServiceLimitOne.fireballDTO.FireballModel.count, Is.EqualTo("1"));
         }
 
         [Test]
-        public void CallingAPIReturns_DateShouldBeAsSpecified()
+        public void CallingAPIReturns_LimitShouldBeFive()
         {
-            Assert.That(_fBAPIService.fireballData[0].Date.Substring(0, 10), Is.EqualTo("2019-11-28"));
+            Assert.That(_fBAPIServiceLimitFive.fireballDTO.FireballModel.count, Is.EqualTo("5"));
         }
 
         [Test]
-        public void CallingAPIReturns_EnergyShouldAsSpecified()
+        public void CallingAPIReturns_LimitShouldBeTwelve()
         {
-            Assert.That(_fBAPIService.fireballData[0].Energy, Is.EqualTo("2.7"));
+            Assert.That(_fBAPIServiceLimitTwelve.fireballDTO.FireballModel.count, Is.EqualTo("12"));
         }
 
         [Test]
-        public void CallingAPIReturns_ImpactEnergyShouldAsSpecified()
+        public void CallingAPIReturns_LimitShouldBeThrityFive()
         {
-            Assert.That(_fBAPIService.fireballData[0].Impacte, Is.EqualTo("0.095"));
-        }
-
-        [Test]
-        public void CallingAPIReturns_LatShouldAsSpecified()
-        {
-            Assert.That(_fBAPIService.fireballData[0].Lat, Is.EqualTo("35.7"));
-        }
-
-        [Test]
-        public void CallingAPIReturns_LatDirectionShouldAsSpecified()
-        {
-            Assert.That(_fBAPIService.fireballData[0].Latdir, Is.EqualTo("N"));
-        }
-
-        [Test]
-        public void CallingAPIReturns_LonShouldAsSpecified()
-        {
-            Assert.That(_fBAPIService.fireballData[0].Lon, Is.EqualTo("31.7"));
-        }
-
-        [Test]
-        public void CallingAPIReturns_LonDirectionShouldAsSpecified()
-        {
-            Assert.That(_fBAPIService.fireballData[0].Londir, Is.EqualTo("W"));
-        }
-
-        [Test]
-        public void CallingAPIReturns_AltShouldAsSpecified()
-        {
-            Assert.That(_fBAPIService.fireballData[0].Alt, Is.EqualTo("35"));
-        }
-
-        [Test]
-        public void CallingAPIReturns_VelShouldAsSpecified()
-        {
-            Assert.That(_fBAPIService.fireballData[0].Vel, Is.EqualTo("13.0"));
+            Assert.That(_fBAPIServiceLimitThrityFive.fireballDTO.FireballModel.count, Is.EqualTo("35"));
         }
     }
 }
