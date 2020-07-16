@@ -8,7 +8,7 @@ namespace JPL_API_Testing.MissionDesignApiService.HTTPManager
 
         public MissionDesignApiManager()
         {
-            client = new RestClient(ConfigReader.BaseUrl);
+            client = new RestClient(JPL_API_Library.ConfigReader.BaseUrl);
         }
         public string GetMissionDesignData()
         {
