@@ -15,9 +15,9 @@ namespace JPL_API_Testing.MissionDesignApiService
         public string MissionDesignData;
         public JObject json_MissionDesign;
 
-        public MissionDesignService()
+        public MissionDesignService(string desiredObject)
         {
-            MissionDesignData = MissionDesignManager.GetMissionDesignData();
+            MissionDesignData = MissionDesignManager.GetMissionDesignData(desiredObject);
             MissionDesignDTO.DeserializeMissionDesignData(MissionDesignData);
             json_MissionDesign = JsonConvert.DeserializeObject<JObject>(MissionDesignData);
             missionDesignDataList = GetMissionDesignData();
