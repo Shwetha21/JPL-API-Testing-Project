@@ -12,7 +12,7 @@ namespace JPL_API_Testing
 {
     public class MissionDesignTests
     {
-        private MissionDesignService _missionDesignDataResponse = new MissionDesignService();
+        private MissionDesignService _missionDesignDataResponse = new MissionDesignService("C/2020 F3");
 
         [TestCase("signature")]
         [TestCase("_object")]

@@ -10,7 +10,7 @@ namespace JPL_API_Testing.MissionDesignApi.Tests
 {
     class MissionDesignDataTests
     {
-        private MissionDesignService _missionDesignService = new MissionDesignService();
+        private MissionDesignService _missionDesignService = new MissionDesignService("C/2020 F3");
         [TestCase("MJD0")]
         [TestCase("MJDf")]
         [TestCase("vinf_dep")]
