@@ -24,7 +24,7 @@ namespace CADAPI.CadApi.Tests
             Assert.That(_cadService.cadDataList.First().des, Is.EqualTo("2016 DY30"));
         }
         [Test]
-        public void SPKClosestApproachDate_ReturnsFutureDate()
+        public void SPKNextClosestApproachDate_ReturnsFutureDate()
         {
             Assert.That(_cadService.cadDataList.First().cd.Substring(0, 11), Is.GreaterThan(DateTime.Now.ToString()));
         }
