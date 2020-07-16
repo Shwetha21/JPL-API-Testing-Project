@@ -1,8 +1,8 @@
 ﻿//using JPL_API_Testing.JPLAPIService.DataHandling;
-using 
-using JPL_API_Testing.NHATSApi.NHATSApiService.DataHandling;
+using NHATSAPIProject.NHATSApi.NHATSApiService.HTTPManager;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
+using JPL_API_Testing.NHATSApi.NHATSApiService.DataHandling;
 
 namespace JPL_API_Testing.JPLAPIService
 {

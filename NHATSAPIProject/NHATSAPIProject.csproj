@@ -68,7 +68,6 @@
     <Compile Include="NHATSApi\NHATSApiService\NHATSAPIServices.cs" />
     <Compile Include="NHATSApi\NHATSTestsFolder\NHATSSpecificAsteroidTests.cs" />
     <Compile Include="NHATSApi\NHATSTestsFolder\NHATSTests.cs" />
-    <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
