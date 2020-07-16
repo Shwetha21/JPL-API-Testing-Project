@@ -1,7 +1,7 @@
-﻿using RestSharp;
-using JPL_API_Library;
+﻿using JPL_API_Library;
+using RestSharp;
 
-namespace JPL_API_Testing.SentryAPI.SentrydesDataApiService.HTTPManager
+namespace SentryAPI.SentrydesDataApiService.HTTPManager
 {
     public class SentryAPIManager
     {

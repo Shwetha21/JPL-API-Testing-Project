@@ -1,9 +1,7 @@
-﻿
-using JPL_API_Testing.JPLAPIService;
+﻿using NHATSApi.NHATSApiService;
 using NUnit.Framework;
-using System.Linq;
 
-namespace JPL_API_Testing.NHATSApi.NHATSTestsFolder
+namespace NHATSApi.Tests
 {
     public class NHATSTests
     {
@@ -37,19 +35,18 @@ namespace JPL_API_Testing.NHATSApi.NHATSTestsFolder
         [Test]
         public void CheckingWhetherTheHValueOfAlltheObjectsAreGreaterThan15()
         {
-            foreach( var i in nHATSAPIServices.nhatsDTO.NHATSData.data)
-            { 
-                Assert.That(i.h, Is.GreaterThan("15")); 
+            foreach (var i in nHATSAPIServices.nhatsDTO.NHATSData.data)
+            {
+                Assert.That(i.h, Is.GreaterThan("15"));
             }
-            
         }
 
         [Test]
         public void CheckingWhetherTheOCCrangeIsInBetween0and10()
         {
-            foreach( var i in nHATSAPIServices.nhatsDTO.NHATSData.data)
+            foreach (var i in nHATSAPIServices.nhatsDTO.NHATSData.data)
             {
-                Assert.That(int.Parse(i.occ), Is.InRange(0,10));
+                Assert.That(int.Parse(i.occ), Is.InRange(0, 10));
             }
         }
 

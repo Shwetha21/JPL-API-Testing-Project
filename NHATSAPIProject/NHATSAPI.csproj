@@ -66,9 +66,9 @@
     <Compile Include="NHATSApi\NHATSApiService\DataHandling\NHATSSpecificObjectModel.cs" />
     <Compile Include="NHATSApi\NHATSApiService\HTTPManager\NHATSAPIManager.cs" />
     <Compile Include="NHATSApi\NHATSApiService\NHATSAPIServices.cs" />
-    <Compile Include="NHATSApi\NHATSTestsFolder\NHATSSpecificAsteroidTests.cs" />
-    <Compile Include="NHATSApi\NHATSTestsFolder\NHATSTestParameter.cs" />
-    <Compile Include="NHATSApi\NHATSTestsFolder\NHATSTests.cs" />
+    <Compile Include="NHATSApi\Tests\NHATSSpecificAsteroidTests.cs" />
+    <Compile Include="NHATSApi\Tests\NHATSTestParameter.cs" />
+    <Compile Include="NHATSApi\Tests\NHATSTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

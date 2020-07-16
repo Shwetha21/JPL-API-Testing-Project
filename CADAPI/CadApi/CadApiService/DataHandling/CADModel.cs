@@ -1,5 +1,5 @@
-﻿namespace JPL_API_Testing.JPLAPIService.DataHandling
-{ 
+﻿namespace CadApi.CadApiService.DataHandling
+{
     public class CADRoot
     {
         public Signature signature { get; set; }
@@ -13,5 +13,4 @@
         public string source { get; set; }
         public string version { get; set; }
     }
-
 }

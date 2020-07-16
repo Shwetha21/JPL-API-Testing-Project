@@ -1,14 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using JPL_API_Testing.SbdbApiService;
-using NUnit.Framework;
+﻿using NUnit.Framework;
+using SbdbApi.SbdbApiService;
 
 namespace JPL_API_Testing.SbdbApi.Tests
 {
-    class SbdbSignatureTests
+    internal class SbdbSignatureTests
     {
         private SbdbService _sbdbDataResponse = new SbdbService("2015ab");
 

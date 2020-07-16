@@ -1,6 +1,5 @@
-﻿namespace JPL_API_Testing.MissionDesignApiService.DataHandling
+﻿namespace MissionDesignApi.MissionDesignApiService.DataHandling
 {
-
     public class MissionDesignRoot
     {
         public Signature signature { get; set; }
@@ -33,5 +32,4 @@
         public float sep { get; set; }
         public float _const { get; set; }
     }
-
 }

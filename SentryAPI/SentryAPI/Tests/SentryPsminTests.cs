@@ -1,12 +1,11 @@
 ﻿using NUnit.Framework;
-using System.Linq;
-using JPL_API_Testing.SentryAPI.SentrydesDataApiService;
+using SentryAPI.SentrydesDataApiService;
 
-namespace JPL_API_Testing.SentryAPI.Tests
+namespace SentryAPI.Tests
 {
     public class SentryPsminTests
     {
-        SentryPsminDataAPIService _sentryDataApiService = new SentryPsminDataAPIService(-3);
+        private SentryPsminDataAPIService _sentryDataApiService = new SentryPsminDataAPIService(-3);
 
         [Test]
         public void CallingAPI_CorrectVersionResponse()

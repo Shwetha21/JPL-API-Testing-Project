@@ -1,12 +1,11 @@
 ﻿using NUnit.Framework;
-using System.Linq;
-using JPL_API_Testing.SentryAPI.SentrydesDataApiService;
+using SentryAPI.SentrydesDataApiService;
 
 namespace JPL_API_Testing.SentryAPI.Tests
 {
     public class SentryHmaxTests
     {
-        SentryHmaxDataAPIService _sentryDataApiService = new SentryHmaxDataAPIService(99);
+        private SentryHmaxDataAPIService _sentryDataApiService = new SentryHmaxDataAPIService(99);
 
         [Test]
         public void CallingAPI_CorrectVersionResponse()
@@ -25,7 +24,5 @@ namespace JPL_API_Testing.SentryAPI.Tests
         {
             Assert.That(_sentryDataApiService.SentryDataDTO.hmaxData.count, Is.Not.Null.Or.Zero);
         }
-
-
     }
 }

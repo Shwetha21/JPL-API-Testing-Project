@@ -1,6 +1,5 @@
-﻿namespace JPL_API_Testing.SbdbApiService.DataHandling
+﻿namespace SbdbApi.SbdbApiService.DataHandling
 {
-
     public class SbdbRoot
     {
         public Object _object { get; set; }
@@ -72,5 +71,4 @@
         public string label { get; set; }
         public string units { get; set; }
     }
-
 }

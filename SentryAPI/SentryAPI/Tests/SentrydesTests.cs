@@ -1,12 +1,11 @@
 ﻿using NUnit.Framework;
-using System.Linq;
-using JPL_API_Testing.SentryAPI.SentrydesDataApiService;
+using SentryAPI.SentrydesDataApiService;
 
-namespace JPL_API_Testing.SentryAPI.Tests
+namespace SentryAPI.Tests
 {
     public class SentrydesTests
     {
-        SentrydesDataAPIService _sentryDataApiService = new SentrydesDataAPIService(29075);
+        private SentrydesDataAPIService _sentryDataApiService = new SentrydesDataAPIService(29075);
 
         [Test]
         public void checkdesEnergy()
@@ -145,8 +144,5 @@ namespace JPL_API_Testing.SentryAPI.Tests
         {
             Assert.That(_sentryDataApiService.SentryDataDTO.desData.summary.des, Is.EqualTo("29075"));
         }
-
-
-
     }
 }

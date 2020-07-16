@@ -1,12 +1,11 @@
 ﻿using NUnit.Framework;
-using System.Linq;
-using JPL_API_Testing.ScoutDataApiService;
+using ScoutDataApi.ScoutDataApiService;
 
 namespace JPL_API_Testing
 {
     public class ScoutTests
     {
-        ScoutDataAPIService _scoutDataApiService = new ScoutDataAPIService();
+        private ScoutDataAPIService _scoutDataApiService = new ScoutDataAPIService();
 
         [Test]
         public void CallingAPI_ResponseContainsAllRequiredFields()
@@ -33,7 +32,5 @@ namespace JPL_API_Testing
         {
             Assert.That(_scoutDataApiService.ScoutDataDTO.ScoutData.count, Is.Not.Null);
         }
-
-
     }
 }

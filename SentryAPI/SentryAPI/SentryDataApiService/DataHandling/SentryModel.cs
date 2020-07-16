@@ -1,13 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace JPL_API_Testing.SentryAPI.SentrydesDataApiService.DataHandling
+﻿namespace SentryAPI.SentrydesDataApiService.DataHandling
 {
-
-
     public class SentryRoot
     {
         public string count { get; set; }
@@ -38,5 +30,4 @@ namespace JPL_API_Testing.SentryAPI.SentrydesDataApiService.DataHandling
         public string id { get; set; }
         public string des { get; set; }
     }
-
 }

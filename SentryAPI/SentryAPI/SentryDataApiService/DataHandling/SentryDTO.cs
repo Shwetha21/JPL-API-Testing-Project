@@ -1,10 +1,9 @@
 ﻿using Newtonsoft.Json;
 
-namespace JPL_API_Testing.SentryAPI.SentrydesDataApiService.DataHandling
+namespace SentryAPI.SentrydesDataApiService.DataHandling
 {
     public class SentryDTO
     {
-
         public SentryRoot SentryData { get; set; }
 
         public spkRoot spkData { get; set; }
@@ -23,6 +22,7 @@ namespace JPL_API_Testing.SentryAPI.SentrydesDataApiService.DataHandling
         {
             spkData = JsonConvert.DeserializeObject<spkRoot>(SentryResponse);
         }
+
         public void DeserialiseSentryDatades(string SentryResponse)
         {
             desData = JsonConvert.DeserializeObject<desRoot>(SentryResponse);
@@ -32,6 +32,7 @@ namespace JPL_API_Testing.SentryAPI.SentrydesDataApiService.DataHandling
         {
             hmaxData = JsonConvert.DeserializeObject<HmaxRoot>(SentryResponse);
         }
+
         public void DeserialiseSentryDataPsmin(string SentryResponse)
         {
             PsminData = JsonConvert.DeserializeObject<PsminRoot>(SentryResponse);

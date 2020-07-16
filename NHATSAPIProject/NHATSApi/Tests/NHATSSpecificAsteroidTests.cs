@@ -1,8 +1,7 @@
-﻿using JPL_API_Testing.JPLAPIService;
-using JPL_API_Testing.NHATSApi.NHATSApiService;
+﻿using NHATSApi.NHATSApiService;
 using NUnit.Framework;
 
-namespace JPL_API_Testing.NHATSApi.NHATSTestsFolder
+namespace NHATSApi.Tests
 {
     public class NHATSSpecificAsteroidTests
     {

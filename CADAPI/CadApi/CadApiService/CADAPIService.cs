@@ -1,11 +1,10 @@
-﻿using System.Collections.Generic;
-using JPL_API_Testing.CadApi.CadApiService.DataHandling;
-using JPL_API_Testing.JPLAPIService.DataHandling;
-using JPL_API_Testing.JPLAPIService.HTTPManager;
+﻿using CadApi.CadApiService.DataHandling;
+using CadApi.CadApiService.HTTPManager;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
+using System.Collections.Generic;
 
-namespace JPL_API_Testing.JPLAPIService
+namespace CadApi.CadApiService
 {
     public class APIService
     {
@@ -22,13 +21,15 @@ namespace JPL_API_Testing.JPLAPIService
             json_cad = JsonConvert.DeserializeObject<JObject>(cadData);
             cadDataList = GetCADData();
         }
+
         public APIService(string distMin, string distMax)
         {
-            cadData = cadManager.GetCloseApproachData(distMin,distMax);
+            cadData = cadManager.GetCloseApproachData(distMin, distMax);
             cadDTO.DeserializeCADData(cadData);
             json_cad = JsonConvert.DeserializeObject<JObject>(cadData);
             cadDataList = GetCADData();
         }
+
         public APIService(int spk)
         {
             cadData = cadManager.GetCloseApproachData(spk);
@@ -36,23 +37,28 @@ namespace JPL_API_Testing.JPLAPIService
             json_cad = JsonConvert.DeserializeObject<JObject>(cadData);
             if (cadDTO.CADData.count != "0") cadDataList = GetCADData();
         }
+
         public APIService(string type)
         {
             string call = "";
-            switch(type)
+            switch (type)
             {
                 case "pha":
                     call = "pha=true";
                     break;
+
                 case "nea":
                     call = "nea=true";
                     break;
+
                 case "comet":
                     call = "comet=true";
                     break;
+
                 case "nea-comet":
                     call = "nea-comet=true";
                     break;
+
                 case "neo":
                     call = "neo=true";
                     break;
@@ -60,8 +66,9 @@ namespace JPL_API_Testing.JPLAPIService
             cadData = cadManager.GetCloseApproachData(call);
             cadDTO.DeserializeCADData(cadData);
             json_cad = JsonConvert.DeserializeObject<JObject>(cadData);
-            if(cadDTO.CADData.count != "0") cadDataList = GetCADData();
+            if (cadDTO.CADData.count != "0") cadDataList = GetCADData();
         }
+
         private List<CADKeyValues> GetCADData() => cadDTO.ConvertToList();
     }
 }

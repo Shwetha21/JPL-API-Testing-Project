@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace JPL_API_Testing.MissionDesignApi.MissionDesignApiService.DataHandling
+﻿namespace MissionDesignApi.MissionDesignApiService.DataHandling
 {
     public class MissionDesignKeyValues
     {
@@ -31,6 +25,6 @@ namespace JPL_API_Testing.MissionDesignApi.MissionDesignApiService.DataHandling
             decl_dep = declDep;
             approach_ang = approachAng;
             tof = Tof;
-    }
+        }
     }
 }

@@ -1,14 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Web;
+﻿using MissionDesignApi.MissionDesignApiService;
 using NUnit.Framework;
-using JPL_API_Testing.MissionDesignApiService;
-using System.Diagnostics.Contracts;
 
-namespace JPL_API_Testing
+namespace MissionDesignApi.Tests
 {
     public class MissionDesignTests
     {
@@ -34,7 +27,7 @@ namespace JPL_API_Testing
         [Test]
         public void CallingAPI_CorrectVersionResponse()
         {
-            Assert.That(_missionDesignDataResponse.MissionDesignDTO.MissionDesignData.signature.version.Substring(0,3), Is.EqualTo("1.0"));
+            Assert.That(_missionDesignDataResponse.MissionDesignDTO.MissionDesignData.signature.version.Substring(0, 3), Is.EqualTo("1.0"));
         }
 
         [Test]

@@ -1,8 +1,7 @@
 ﻿using System.Collections.Generic;
-using JPL_API_Testing.MissionDesignApi.MissionDesignApiService.DataHandling;
 using Newtonsoft.Json;
 
-namespace JPL_API_Testing.MissionDesignApiService.DataHandling
+namespace MissionDesignApi.MissionDesignApiService.DataHandling
 {
     public class MissionDesignDTO
     {

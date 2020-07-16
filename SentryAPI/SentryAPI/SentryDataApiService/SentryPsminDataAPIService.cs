@@ -1,9 +1,9 @@
-﻿using JPL_API_Testing.SentryAPI.SentrydesDataApiService.DataHandling;
-using JPL_API_Testing.SentryAPI.SentrydesDataApiService.HTTPManager;
+﻿using SentryAPI.SentrydesDataApiService.DataHandling;
+using SentryAPI.SentrydesDataApiService.HTTPManager;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
-namespace JPL_API_Testing.SentryAPI.SentrydesDataApiService
+namespace SentryAPI.SentrydesDataApiService
 {
     public class SentryPsminDataAPIService
     {
