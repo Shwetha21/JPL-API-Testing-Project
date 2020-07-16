@@ -52,5 +52,23 @@ namespace JPL_API_Testing.NHATSApi.NHATSTestsFolder
                 Assert.That(int.Parse(i.occ), Is.InRange(0,10));
             }
         }
+
+        [Test]
+        public void CheckingforapropertyCount()
+        {
+            Assert.That(nHATSAPIServices.nhatsDTO.NHATSData, Has.Property("count"));
+        }
+
+        [Test]
+        public void CheckingforpropertyVersion()
+        {
+            Assert.That(nHATSAPIServices.nhatsDTO.NHATSData.signature, Has.Property("version"));
+        }
+
+        [Test]
+        public void CheckingForPropertySource()
+        {
+            Assert.That(nHATSAPIServices.nhatsDTO.NHATSData.signature, Has.Property("source"));
+        }
     }
 }
