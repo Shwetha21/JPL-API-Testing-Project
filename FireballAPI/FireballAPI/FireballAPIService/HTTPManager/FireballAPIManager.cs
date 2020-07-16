@@ -46,5 +46,12 @@ namespace FireballAPI.FireballAPIService.HTTPManager
             var response = client.Execute(request);
             return response.Content;
         }
+
+        public string GetFireballVelocity(int velMin, int velMax, int recordLimit)
+        {
+            var request = new RestRequest($"fireball.api?vel-min={velMin}&vel-max={velMax}&limit={recordLimit}", Method.GET);
+            var response = client.Execute(request);
+            return response.Content;
+        }
     }
 }
