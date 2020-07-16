@@ -9,14 +9,15 @@ namespace JPL_API_Testing.SentryAPI.SentrydesDataApiService.DataHandling
 
 
 
-    public class spkRoot
+
+    public class desRoot
     {
         public Summary summary { get; set; }
         public Signature signature { get; set; }
         public Datum[] data { get; set; }
     }
 
-    public class Summary
+    public class desSummary
     {
         public string energy { get; set; }
         public string darc { get; set; }
@@ -43,13 +44,13 @@ namespace JPL_API_Testing.SentryAPI.SentrydesDataApiService.DataHandling
         public string des { get; set; }
     }
 
-    public class spkSignature
+    public class desSignature
     {
         public string source { get; set; }
         public string version { get; set; }
     }
 
-    public class spkDatum
+    public class desDatum
     {
         public string energy { get; set; }
         public string width { get; set; }
@@ -62,6 +63,5 @@ namespace JPL_API_Testing.SentryAPI.SentrydesDataApiService.DataHandling
         public string sigma_imp { get; set; }
         public string ps { get; set; }
     }
-
 
 }

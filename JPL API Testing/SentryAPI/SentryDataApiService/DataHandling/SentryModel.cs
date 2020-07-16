@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace JPL_API_Testing.SentryAPI.SentryDataApiService.DataHandling
+namespace JPL_API_Testing.SentryAPI.SentrydesDataApiService.DataHandling
 {
 
 

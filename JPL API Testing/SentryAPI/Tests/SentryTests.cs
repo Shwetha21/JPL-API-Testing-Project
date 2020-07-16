@@ -1,6 +1,6 @@
 ﻿using NUnit.Framework;
 using System.Linq;
-using JPL_API_Testing.SentryAPI.SentryDataApiService;
+using JPL_API_Testing.SentryAPI.SentrydesDataApiService;
 
 namespace JPL_API_Testing
 {

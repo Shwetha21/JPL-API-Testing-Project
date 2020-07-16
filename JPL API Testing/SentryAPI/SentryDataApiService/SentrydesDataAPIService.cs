@@ -5,28 +5,19 @@ using Newtonsoft.Json.Linq;
 
 namespace JPL_API_Testing.SentryAPI.SentrydesDataApiService
 {
-    public class SentryDataApiService
+    public class SentrydesDataAPIService
     {
-
         public SentryAPIManager SentryDataManager = new SentryAPIManager();
         public SentryDTO SentryDataDTO = new SentryDTO();
         public string SentryData;
         public JObject json_SentryData;
 
-        public SentryDataApiService()
+
+        public SentrydesDataAPIService(int des)
         {
-            SentryData = SentryDataManager.GetSentryData();
-            SentryDataDTO.DeserialiseSentryData(SentryData);
+            SentryData = SentryDataManager.GetSentrydesData(des);
+            SentryDataDTO.DeserialiseSentryDatades(SentryData);
             json_SentryData = JsonConvert.DeserializeObject<JObject>(SentryData);
         }
-
-        public SentryDataApiService(int spk)
-        {
-            SentryData = SentryDataManager.GetSentryData(spk);
-            SentryDataDTO.DeserialiseSentryDataspk(SentryData);
-            json_SentryData = JsonConvert.DeserializeObject<JObject>(SentryData);
-        }
-
-
     }
 }

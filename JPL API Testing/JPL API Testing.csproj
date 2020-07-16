@@ -104,11 +104,14 @@
     <Compile Include="ScoutDataApi\ScoutDataApiService\HTTPManager\ScoutDataApiManager.cs" />
     <Compile Include="ScoutDataApi\ScoutDataApiService\ScoutDataApiService.cs" />
     <Compile Include="ScoutDataApi\Tests\ScoutTests.cs" />
+    <Compile Include="SentryAPI\SentryDataApiService\DataHandling\SentrydesModel.cs" />
     <Compile Include="SentryAPI\SentryDataApiService\DataHandling\SentryDTO.cs" />
     <Compile Include="SentryAPI\SentryDataApiService\DataHandling\SentryModel.cs" />
     <Compile Include="SentryAPI\SentryDataApiService\DataHandling\SentryspkModel.cs" />
     <Compile Include="SentryAPI\SentryDataApiService\HTTPManager\SentryDataAPIManager.cs" />
+    <Compile Include="SentryAPI\SentryDataApiService\SentrydesDataAPIService.cs" />
     <Compile Include="SentryAPI\SentryDataApiService\SentryDataApiService.cs" />
+    <Compile Include="SentryAPI\Tests\SentrydesTests.cs" />
     <Compile Include="SentryAPI\Tests\SentryspkTests.cs" />
     <Compile Include="SentryAPI\Tests\SentryTests.cs" />
   </ItemGroup>
