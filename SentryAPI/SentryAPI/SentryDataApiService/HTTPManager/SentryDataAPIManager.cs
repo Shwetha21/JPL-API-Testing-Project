@@ -1,6 +1,7 @@
 ﻿using RestSharp;
+using JPL_API_Library;
 
-namespace JPL_API_Testing.SentryAPI.SentryDataApiService.HTTPManager
+namespace JPL_API_Testing.SentryAPI.SentrydesDataApiService.HTTPManager
 {
     public class SentryAPIManager
     {
@@ -24,5 +25,13 @@ namespace JPL_API_Testing.SentryAPI.SentryDataApiService.HTTPManager
             var response = client.Execute(request);
             return response.Content;
         }
+
+        public string GetSentrydesData(int des)
+        {
+            var request = new RestRequest($"sentry.api?des={des}", Method.GET);
+            var response = client.Execute(request);
+            return response.Content;
+        }
+
     }
 }

@@ -1,9 +1,9 @@
-﻿using JPL_API_Testing.SentryAPI.SentryDataApiService.DataHandling;
-using JPL_API_Testing.SentryAPI.SentryDataApiService.HTTPManager;
+﻿using JPL_API_Testing.SentryAPI.SentrydesDataApiService.DataHandling;
+using JPL_API_Testing.SentryAPI.SentrydesDataApiService.HTTPManager;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
-namespace JPL_API_Testing.SentryAPI.SentryDataApiService
+namespace JPL_API_Testing.SentryAPI.SentrydesDataApiService
 {
     public class SentryDataApiService
     {
@@ -26,5 +26,7 @@ namespace JPL_API_Testing.SentryAPI.SentryDataApiService
             SentryDataDTO.DeserialiseSentryDataspk(SentryData);
             json_SentryData = JsonConvert.DeserializeObject<JObject>(SentryData);
         }
+
+
     }
 }
