@@ -29,7 +29,7 @@ namespace NHATSAPIProject.NHATSApi.NHATSApiService.HTTPManager
 
         public string GetNearEarthOrbitData(string asteroid,string velocity,string duration,string stay,string launch)
         {
-            var request = new RestRequest($"?des={asteroid}&dv={velocity}&dur={duration}&stay={stay}&launch={launch}");
+            var request = new RestRequest($"nhats.api?des={asteroid}&dv={velocity}&dur={duration}&stay={stay}&launch={launch}");
             var response = client.Execute(request, Method.GET);
             return response.Content;
         }
