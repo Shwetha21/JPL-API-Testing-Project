@@ -70,6 +70,7 @@
     <Compile Include="FireballAPI\Tests\FireballAPIDataTests.cs" />
     <Compile Include="FireballAPI\Tests\FireballAPIDateQueryTests.cs" />
     <Compile Include="FireballAPI\Tests\FireballAPIEnergyQueryTests.cs" />
+    <Compile Include="FireballAPI\Tests\FireballAPIImpactEnergyQueryTests.cs" />
     <Compile Include="FireballAPI\Tests\FireballAPILimitQueryTests.cs" />
     <Compile Include="FireballAPI\Tests\FireballAPIResponseTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
