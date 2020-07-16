@@ -1,8 +1,8 @@
-﻿using JPL_API_Testing.FireballAPI.FireballAPIService;
+﻿using FireballAPI.FireballAPIService;
 using NUnit.Framework;
 using System.Linq;
 
-namespace FireballAPI
+namespace FireballAPI.Tests
 {
     public class FireballAPIResponseTests
     {

@@ -7,11 +7,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B091CE99-6729-4815-BA9B-52D711D6EBBA}</ProjectGuid>
+    <ProjectGuid>{55E7BA0F-5D7E-4858-89D9-36A9E746604E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>JPL_API_Testing</RootNamespace>
-    <AssemblyName>JPL API Testing</AssemblyName>
+    <RootNamespace>SBDBAPI</RootNamespace>
+    <AssemblyName>SBDBAPI</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -57,49 +57,30 @@
       <HintPath>..\packages\RestSharp.106.11.4\lib\net452\RestSharp.dll</HintPath>
     </Reference>
     <Reference Include="System" />
-    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Web" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MissionDesignApi\MissionDesignApiService\DataHandling\MissionDesignDTO.cs" />
-    <Compile Include="MissionDesignApi\MissionDesignApiService\DataHandling\MissionDesignKeyValues.cs" />
-    <Compile Include="MissionDesignApi\MissionDesignApiService\DataHandling\MissionDesignModel.cs" />
-    <Compile Include="MissionDesignApi\MissionDesignApiService\HTTPManager\MissionDesignApiManager.cs" />
-    <Compile Include="MissionDesignApi\MissionDesignApiService\MissionDesignService.cs" />
-    <Compile Include="MissionDesignApi\Tests\MissionDesignDataTests.cs" />
-    <Compile Include="MissionDesignApi\Tests\MissionDesignGeneralTests.cs" />
-    <Compile Include="FireballAPI\FireballAPIService\DataHandling\FireballKeyValues.cs" />
-    <Compile Include="FireballAPI\Tests\FireballAPIDataTests.cs" />
-    <Compile Include="FireballAPI\Tests\FireballAPIDateQueryTests.cs" />
-    <Compile Include="FireballAPI\Tests\FireballAPILimitQueryTests.cs" />
-    <Compile Include="FireballAPI\Tests\FireballAPIResponseTests.cs" />
-    <Compile Include="SbdbApi\SbdbApiService\SbdbService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SbdbApi\SbdbApiService\DataHandling\SbdbDTO.cs" />
     <Compile Include="SbdbApi\SbdbApiService\DataHandling\SbdbModel.cs" />
     <Compile Include="SbdbApi\SbdbApiService\HTTPManager\SbdbApiManager.cs" />
+    <Compile Include="SbdbApi\SbdbApiService\SbdbService.cs" />
     <Compile Include="SbdbApi\Tests\SbdbAmorSubjectTests.cs" />
     <Compile Include="SbdbApi\Tests\SbdbGeneralResponseTests.cs" />
-    <Compile Include="FireballAPI\FireballAPIService\DataHandling\FireballModel.cs" />
-    <Compile Include="FireballAPI\FireballAPIService\DataHandling\FireballDTO.cs" />
-    <Compile Include="FireballAPI\FireballAPIService\FBAPIService.cs" />
-    <Compile Include="FireballAPI\FireballAPIService\HTTPManager\FireballAPIManager.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ScoutDataApi\ScoutDataApiService\DataHandling\ScoutDTO.cs" />
-    <Compile Include="ScoutDataApi\ScoutDataApiService\DataHandling\ScoutModel.cs" />
-    <Compile Include="ScoutDataApi\ScoutDataApiService\HTTPManager\ScoutDataApiManager.cs" />
-    <Compile Include="ScoutDataApi\ScoutDataApiService\ScoutDataApiService.cs" />
-    <Compile Include="ScoutDataApi\Tests\ScoutTests.cs" />
-    <Compile Include="SentryAPI\SentryDataApiService\DataHandling\SentryDTO.cs" />
-    <Compile Include="SentryAPI\SentryDataApiService\DataHandling\SentryModel.cs" />
-    <Compile Include="SentryAPI\SentryDataApiService\DataHandling\SentryspkModel.cs" />
-    <Compile Include="SentryAPI\SentryDataApiService\HTTPManager\SentryDataAPIManager.cs" />
-    <Compile Include="SentryAPI\SentryDataApiService\SentryDataApiService.cs" />
-    <Compile Include="SentryAPI\Tests\SentryspkTests.cs" />
-    <Compile Include="SentryAPI\Tests\SentryTests.cs" />
+    <Compile Include="SbdbApi\Tests\SbdbObjectTests.cs" />
+    <Compile Include="SbdbApi\Tests\SbdbOrbitTests.cs" />
+    <Compile Include="SbdbApi\Tests\SbdbSignatureTests.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="app.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\JPL_API_Library\JPL API Library.csproj">
+      <Project>{5731a65d-1b31-4542-bf1c-630490d2435d}</Project>
+      <Name>JPL API Library</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

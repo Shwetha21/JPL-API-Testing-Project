@@ -1,7 +1,7 @@
-﻿using JPL_API_Testing.FireballAPI.FireballAPIService;
+﻿using FireballAPI.FireballAPIService;
 using NUnit.Framework;
 
-namespace FireballAPI
+namespace FireballAPI.Tests
 {
     public class FireballAPIDateQueryTests
     {
