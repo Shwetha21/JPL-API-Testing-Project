@@ -1,9 +1,9 @@
-﻿using JPL_API_Testing.FireballAPI.FireballAPIService.DataHandling;
-using JPL_API_Testing.FireballAPI.FireballAPIService.HTTPManager;
+﻿using FireballAPI.FireballAPIService.DataHandling;
+using FireballAPI.FireballAPIService.HTTPManager;
 using Newtonsoft.Json.Linq;
 using System.Collections.Generic;
 
-namespace JPL_API_Testing.FireballAPI.FireballAPIService
+namespace FireballAPI.FireballAPIService
 {
     public class FBAPIService
     {
