@@ -39,5 +39,12 @@ namespace JPL_API_Testing.SentryAPI.SentrydesDataApiService.HTTPManager
             var response = client.Execute(request);
             return response.Content;
         }
+
+        public string GetSentryPsminData(int Psmin)
+        {
+            var request = new RestRequest($"sentry.api?h-max={Psmin}", Method.GET);
+            var response = client.Execute(request);
+            return response.Content;
+        }
     }
 }

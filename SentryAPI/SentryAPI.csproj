@@ -65,16 +65,19 @@
     <Compile Include="SentryAPI\SentryDataApiService\DataHandling\SentryDTO.cs" />
     <Compile Include="SentryAPI\SentryDataApiService\DataHandling\SentryHmaxModel.cs" />
     <Compile Include="SentryAPI\SentryDataApiService\DataHandling\SentryModel.cs" />
+    <Compile Include="SentryAPI\SentryDataApiService\DataHandling\SentryPs-minModel.cs" />
     <Compile Include="SentryAPI\SentryDataApiService\DataHandling\SentryspkModel.cs" />
     <Compile Include="SentryAPI\SentryDataApiService\HTTPManager\SentryDataAPIManager.cs" />
     <Compile Include="SentryAPI\SentryDataApiService\SentryDataApiService.cs" />
     <Compile Include="SentryAPI\SentryDataApiService\SentrydesDataAPIService.cs" />
     <Compile Include="SentryAPI\SentryDataApiService\SentryHmaxDataAPIService.cs" />
+    <Compile Include="SentryAPI\SentryDataApiService\SentryPsminDataAPIService.cs" />
     <Compile Include="SentryAPI\Tests\SentrydesTests.cs" />
     <Compile Include="SentryAPI\Tests\SentryHmaxTests.cs" />
     <Compile Include="SentryAPI\Tests\SentryspkTests.cs" />
     <Compile Include="SentryAPI\Tests\SentryTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SentryAPI\Tests\SentryPsminTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\JPL_API_Library\app.config">
