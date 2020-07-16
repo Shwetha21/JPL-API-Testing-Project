@@ -5,7 +5,7 @@ namespace FireballAPI.Tests
 {
     public class FireballAPIDateQueryTests
     {
-        private FBAPIService _fBAPIService = new FBAPIService("2019-11-28", "2019-11-29");
+        private FBAPIService _fBAPIService = new FBAPIService("date", 3);
 
         [Test]
         public void CallingAPIReturns_ThreeRecords()

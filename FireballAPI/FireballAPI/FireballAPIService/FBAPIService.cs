@@ -13,26 +13,53 @@ namespace FireballAPI.FireballAPIService
         public JObject json_fireball;
         public string fireballResponse;
 
-        public FBAPIService()
+        public FBAPIService(string queryType, int recordLimit, string dateMin = "2019-11-28", string dateMax = "2019-11-29", string energyMin = "8.0", string energyMax = "10.0")
         {
-            fireballResponse = fireballAPIManager.GetFireball();
-            fireballDTO.DeserialiseResponse(fireballResponse);
-
-            fireballData = GetFireballData();
+            switch (queryType.ToLower())
+            {
+                case "all":
+                    AllRequestService();
+                    break;
+                case "limit":
+                    LimitQueryRequestService(recordLimit);
+                    break;
+                case "date":
+                    DateQueryRequestService(dateMin, dateMax, recordLimit);
+                    break;
+                case "energy":
+                    EnergyQueryRequestService(energyMin, energyMax, recordLimit);
+                    break;
+            }
+            
+        }
+        public void AllRequestService()
+        {
+            fireballResponse = fireballAPIManager.GetAllFireball();
+            DataService();
         }
 
-        public FBAPIService(int limit)
+        public void LimitQueryRequestService(int recordLimit)
         {
-            fireballResponse = fireballAPIManager.GetFireball(limit);
-            fireballDTO.DeserialiseResponse(fireballResponse);
+            fireballResponse = fireballAPIManager.GetFireballLimit(recordLimit);
+            DataService();
         }
 
-        public FBAPIService(string dateMin, string dateMax)
+        public void DateQueryRequestService(string dateMin, string dateMax, int recordLimit)
         {
-            fireballResponse = fireballAPIManager.GetFireball(dateMin, dateMax);
-            fireballDTO.DeserialiseResponse(fireballResponse);
+            fireballResponse = fireballAPIManager.GetFireballDate(dateMin, dateMax, recordLimit);
+            DataService();
+        }
 
-            fireballData = GetFireballData();
+        public void EnergyQueryRequestService(string energyMin, string energyMax, int recordLimit)
+        {
+            fireballResponse = fireballAPIManager.GetFireballEnergy(energyMin, energyMax, recordLimit);
+            DataService();
+        }
+
+        public void DataService()
+        {
+            fireballDTO.DeserialiseResponse(fireballResponse);
+            fireballData = GetFireballData();            
         }
 
         private List<FireballKeyValues> GetFireballData() => fireballDTO.ConvertToList();
