@@ -62,8 +62,6 @@
     <Reference Include="System.Web" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CadApi\CadApiService\DataHandling\CADKeyValues.cs" />
-    <Compile Include="CadApi\Tests\CADDataTests.cs" />
     <Compile Include="FireballAPI\FireballAPIService\DataHandling\FireballKeyValues.cs" />
     <Compile Include="FireballAPI\Tests\FireballAPIDataTests.cs" />
     <Compile Include="FireballAPI\Tests\FireballAPIDateQueryTests.cs" />
@@ -82,11 +80,6 @@
     <Compile Include="SbdbApi\SbdbApiService\HTTPManager\SbdbApiManager.cs" />
     <Compile Include="SbdbApi\Tests\SbdbAmorSubjectTests.cs" />
     <Compile Include="SbdbApi\Tests\SbdbGeneralResponseTests.cs" />
-    <Compile Include="CadApi\Tests\CADGeneralTests.cs" />
-    <Compile Include="CadApi\CadApiService\CADAPIService.cs" />
-    <Compile Include="CadApi\CadApiService\DataHandling\CADDTO.cs" />
-    <Compile Include="CadApi\CadApiService\DataHandling\CADModel.cs" />
-    <Compile Include="CadApi\CadApiService\HTTPManager\CADAPIManager.cs" />
     <Compile Include="FireballAPI\FireballAPIService\DataHandling\FireballModel.cs" />
     <Compile Include="FireballAPI\FireballAPIService\DataHandling\FireballDTO.cs" />
     <Compile Include="FireballAPI\FireballAPIService\FBAPIService.cs" />
