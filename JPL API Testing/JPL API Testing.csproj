@@ -76,8 +76,6 @@
     <Compile Include="MissionDesignApi\MissionDesignApiService\MissionDesignService.cs" />
     <Compile Include="MissionDesignApi\Tests\MissionDesignDataTests.cs" />
     <Compile Include="MissionDesignApi\Tests\MissionDesignGeneralTests.cs" />
-    <Compile Include="NHATSApi\NHATSApiService\DataHandling\NHATSSpecificObjectModel.cs" />
-    <Compile Include="NHATSApi\NHATSTestsFolder\NHATSSpecificAsteroidTests.cs" />
     <Compile Include="SbdbApi\SbdbApiService\SbdbService.cs" />
     <Compile Include="SbdbApi\SbdbApiService\DataHandling\SbdbDTO.cs" />
     <Compile Include="SbdbApi\SbdbApiService\DataHandling\SbdbModel.cs" />
@@ -85,16 +83,10 @@
     <Compile Include="SbdbApi\Tests\SbdbAmorSubjectTests.cs" />
     <Compile Include="SbdbApi\Tests\SbdbGeneralResponseTests.cs" />
     <Compile Include="CadApi\Tests\CADGeneralTests.cs" />
-    <Compile Include="ConfigReader.cs" />
     <Compile Include="CadApi\CadApiService\CADAPIService.cs" />
     <Compile Include="CadApi\CadApiService\DataHandling\CADDTO.cs" />
     <Compile Include="CadApi\CadApiService\DataHandling\CADModel.cs" />
     <Compile Include="CadApi\CadApiService\HTTPManager\CADAPIManager.cs" />
-    <Compile Include="NHATSApi\NHATSApiService\DataHandling\NHATSDTO.cs" />
-    <Compile Include="NHATSApi\NHATSApiService\DataHandling\NHATSModel.cs" />
-    <Compile Include="NHATSApi\NHATSApiService\NHATSAPIServices.cs" />
-    <Compile Include="NHATSApi\NHATSApiService\HTTPManager\NHATSAPIManager.cs" />
-    <Compile Include="NHATSApi\NHATSTestsFolder\NHATSTests.cs" />
     <Compile Include="FireballAPI\FireballAPIService\DataHandling\FireballModel.cs" />
     <Compile Include="FireballAPI\FireballAPIService\DataHandling\FireballDTO.cs" />
     <Compile Include="FireballAPI\FireballAPIService\FBAPIService.cs" />
