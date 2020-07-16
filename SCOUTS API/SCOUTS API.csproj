@@ -69,8 +69,10 @@
     <Compile Include="ScoutDataApi\Tests\ScoutTests.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="..\JPL_API_Library\app.config">
+      <Link>app.config</Link>
+    </None>
     <None Include="packages.config" />
-    <None Include="ScoutDataApi\app.config" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\JPL_API_Library\JPL API Library.csproj">
