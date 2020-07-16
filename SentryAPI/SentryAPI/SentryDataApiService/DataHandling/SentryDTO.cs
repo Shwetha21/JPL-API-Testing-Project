@@ -12,6 +12,7 @@ namespace JPL_API_Testing.SentryAPI.SentrydesDataApiService.DataHandling
         public desRoot desData { get; set; }
 
         public HmaxRoot hmaxData { get; set; }
+        public PsminRoot PsminData { get; set; }
 
         public void DeserialiseSentryData(string SentryResponse)
         {
@@ -30,6 +31,10 @@ namespace JPL_API_Testing.SentryAPI.SentrydesDataApiService.DataHandling
         public void DeserialiseSentryDataHmax(string SentryResponse)
         {
             hmaxData = JsonConvert.DeserializeObject<HmaxRoot>(SentryResponse);
+        }
+        public void DeserialiseSentryDataPsmin(string SentryResponse)
+        {
+            PsminData = JsonConvert.DeserializeObject<PsminRoot>(SentryResponse);
         }
     }
 }
