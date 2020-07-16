@@ -49,3 +49,33 @@ it's respective stories & epics.
 
 ##### After Sprint 1
 <img src="Sprint1AfterApi.PNG" width="3000" />
+
+#### Sprint 2
+#### Goal: To create unit tests to cover many aspects of 'happy path' for the APIs present.
+
+* To determine the main aspecs of the API and test them accordingly
+* Continue to work within individual APIs to avoid conflict and error in code
+
+#### Sprint 2 - Review
+
+- Sprint Backlog items have been completed
+- None hae been pushed back into project backlog
+- Focussed on the api's happy path
+- Potentially keeping mind of what the application could look like when there are more solutions rather than just the one
+- Look towards testing the different data that comes back from the apis bad path
+#### Sprint 2 - Retrospective
+
+##### Start
+- Ensure User stories are added before the work is started
+
+##### Stop
+- Leaving the backlog empty
+
+##### Continue
+- Keep everyone informed
+- Updated local branches before work
+- ##### Before Sprint 2
+<img src="Sprint2Api.PNG" width="3000" />
+
+##### After Sprint 2
+<img src="Sprint2AfterApi.PNG" width="3000" />
