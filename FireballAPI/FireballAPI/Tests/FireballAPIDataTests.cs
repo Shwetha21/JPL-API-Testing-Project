@@ -5,7 +5,7 @@ namespace FireballAPI.Tests
 {
     public class FireballAPIDataTests
     {
-        private FBAPIService _fBAPIService = new FBAPIService();
+        private FBAPIService _fBAPIService = new FBAPIService("all", 1);
 
         [Test]
         public void CallingAPIReturns_PopulatedDate()
