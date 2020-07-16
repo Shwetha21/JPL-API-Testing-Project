@@ -71,12 +71,13 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="app.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\JPL_API_Library\JPL_API_Library.csproj">
+    <ProjectReference Include="..\JPL_API_Library\JPL API Library.csproj">
       <Project>{5731a65d-1b31-4542-bf1c-630490d2435d}</Project>
-      <Name>JPL_API_Library</Name>
+      <Name>JPL API Library</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
