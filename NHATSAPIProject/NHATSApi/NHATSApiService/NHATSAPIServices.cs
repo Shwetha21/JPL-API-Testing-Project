@@ -12,7 +12,7 @@ namespace JPL_API_Testing.JPLAPIService
         public NHATSDTO nhatsDTO = new NHATSDTO();
         public string nhatsData;
         public JObject json_nhats;
-
+       
         public NHATSAPIServices()
         {
             nhatsData = cadManager.GetNearEarthOrbitData();
@@ -27,6 +27,15 @@ namespace JPL_API_Testing.JPLAPIService
             nhatsDTO.DesirealiseNHATSSpecificData(nhatsData);
 
             json_nhats = JsonConvert.DeserializeObject<JObject>(nhatsData);
+        }
+
+        public NHATSAPIServices(string asteroid, string velocity, string duration, string stay, string launch)
+        {
+            nhatsData = cadManager.GetNearEarthOrbitData(asteroid,velocity,duration,stay,launch);
+            nhatsDTO.DesirealiseNHATSSpecificData(nhatsData);
+
+            json_nhats = JsonConvert.DeserializeObject<JObject>(nhatsData);
+
         }
     }
 }
