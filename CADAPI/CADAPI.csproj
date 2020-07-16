@@ -67,7 +67,10 @@
     <Compile Include="CadApi\CadApiService\DataHandling\CADModel.cs" />
     <Compile Include="CadApi\CadApiService\HTTPManager\CADAPIManager.cs" />
     <Compile Include="CadApi\Tests\CADDataTests.cs" />
+    <Compile Include="CadApi\Tests\CADDistanceLimitQueryTests.cs" />
     <Compile Include="CadApi\Tests\CADGeneralTests.cs" />
+    <Compile Include="CadApi\Tests\CADLimitQueryTypeTests.cs" />
+    <Compile Include="CadApi\Tests\CADSpecificObjectQueryTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
