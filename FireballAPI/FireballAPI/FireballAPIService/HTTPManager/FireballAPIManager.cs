@@ -12,23 +12,30 @@ namespace FireballAPI.FireballAPIService.HTTPManager
             client = new RestClient(ConfigReader.BaseUrl);
         }
 
-        public string GetFireball()
+        public string GetAllFireball()
         {
             var request = new RestRequest("fireball.api", Method.GET);
             var response = client.Execute(request);
             return response.Content;
         }
 
-        public string GetFireball(int recLimit)
+        public string GetFireballLimit(int recordLimit)
         {
-            var request = new RestRequest($"fireball.api?limit={recLimit}", Method.GET);
+            var request = new RestRequest($"fireball.api?limit={recordLimit}", Method.GET);
             var response = client.Execute(request);
             return response.Content;
         }
 
-        public string GetFireball(string dateMin, string dateMax)
+        public string GetFireballDate(string dateMin, string dateMax, int recordLimit)
         {
-            var request = new RestRequest($"fireball.api?date-min={dateMin}&date-max={dateMax}", Method.GET);
+            var request = new RestRequest($"fireball.api?date-min={dateMin}&date-max={dateMax}&limit={recordLimit}", Method.GET);
+            var response = client.Execute(request);
+            return response.Content;
+        }
+
+        public string GetFireballEnergy(string energyMin, string energyMax, int recordLimit)
+        {
+            var request = new RestRequest($"fireball.api?energy-min={energyMin}&energy-max={energyMax}&limit={recordLimit}", Method.GET);
             var response = client.Execute(request);
             return response.Content;
         }

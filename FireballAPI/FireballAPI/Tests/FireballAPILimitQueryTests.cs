@@ -5,10 +5,10 @@ namespace FireballAPI.Tests
 {
     public class FireballAPILimitQuery
     {
-        private FBAPIService _fBAPIServiceLimitOne = new FBAPIService(1);
-        private FBAPIService _fBAPIServiceLimitFive = new FBAPIService(5);
-        private FBAPIService _fBAPIServiceLimitTwelve = new FBAPIService(12);
-        private FBAPIService _fBAPIServiceLimitThrityFive = new FBAPIService(35);
+        private FBAPIService _fBAPIServiceLimitOne = new FBAPIService("limit", 1);
+        private FBAPIService _fBAPIServiceLimitFive = new FBAPIService("limit", 5);
+        private FBAPIService _fBAPIServiceLimitTwelve = new FBAPIService("limit", 12);
+        private FBAPIService _fBAPIServiceLimitThrityFive = new FBAPIService("limit", 35);
 
         [Test]
         public void CallingAPIReturns_LimitShouldBeOne()
