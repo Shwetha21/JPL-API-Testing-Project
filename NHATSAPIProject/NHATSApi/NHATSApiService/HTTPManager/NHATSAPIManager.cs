@@ -1,6 +1,9 @@
 ﻿using RestSharp;
+using JPL_API_Library;
 
-namespace JPL_API_Testing.JPLAPIService.HTTPManager
+
+namespace NHATSAPIProject.NHATSApi.NHATSApiService.HTTPManager
+    
 {
     public class NHATSAPIManager
     {

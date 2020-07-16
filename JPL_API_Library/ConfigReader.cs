@@ -1,7 +1,7 @@
 ﻿
 using System.Configuration;
 
-namespace JPL_API_Testing
+namespace JPL_API_Library
 {
     public class ConfigReader
     {
