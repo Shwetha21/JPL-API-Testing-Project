@@ -3,7 +3,7 @@ using FireballAPI.FireballAPIService.HTTPManager;
 using Newtonsoft.Json.Linq;
 using System.Collections.Generic;
 
-namespace JPL_API_Testing.FireballAPI.FireballAPIService
+namespace FireballAPI.FireballAPIService
 {
     public class FBAPIService
     {
