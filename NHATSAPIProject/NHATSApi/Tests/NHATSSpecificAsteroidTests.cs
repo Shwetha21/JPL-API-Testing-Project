@@ -1,5 +1,6 @@
 ﻿using NHATSApi.NHATSApiService;
 using NUnit.Framework;
+using System;
 
 namespace NHATSApi.Tests
 {
@@ -9,6 +10,7 @@ namespace NHATSApi.Tests
         private NHATSAPIServices _nhatsServiceforOrpheus = new NHATSAPIServices("3361");
         private NHATSAPIServices _nhatsservivenullasteroid = new NHATSAPIServices("");
         private NHATSAPIServices _invalidnhats = new NHATSAPIServices("134");
+        private NHATSAPIServices _nHATSAPIServices = new NHATSAPIServices("2016%20TB18");
 
         [Test]
         public void CheckingWhetherTheDataObtainedIsOf2000SG344Asteroid()
@@ -111,5 +113,30 @@ namespace NHATSApi.Tests
         {
             Assert.That(_invalidnhats.nhatsData, Does.Contain("specified NHATS object not found"));
         }
+
+        [Test]
+        public void CheckingForAnglrofArrival()
+        { 
+            Assert.That(_nHATSAPIServices.nhatsDTO.NHATSSpecificData.min_dv_traj.dec_arr, Is.Not.Null); ;
+        }
+
+        [Test]
+        public void CheckingforAngleofDeparture()
+        {
+            Assert.That(_nHATSAPIServices.nhatsDTO.NHATSSpecificData.min_dv_traj.dec_dep, Is.Not.Null);
+        }
+
+        [Test]
+        public void CheckingforPropertyDurationAt()
+        {
+            Assert.That(_nHATSAPIServices.nhatsDTO.NHATSSpecificData.min_dv_traj.dur_at, Is.Not.Null);
+        }
+
+        [Test]
+        public void CheckingForDurationOut()
+        {
+            Assert.That(_nHATSAPIServices.nhatsDTO.NHATSSpecificData.min_dv_traj.dur_out, Is.Not.Null);
+        }
+
     }
 }

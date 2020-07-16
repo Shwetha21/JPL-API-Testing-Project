@@ -35,5 +35,14 @@ namespace NHATSApi.NHATSApiService
 
             json_nhats = JsonConvert.DeserializeObject<JObject>(nhatsData);
         }
+
+        public NHATSAPIServices(string launch, string stay)
+        {
+            
+            nhatsData = cadManager.GetNearEarthOrbitData(launch,stay);
+            nhatsDTO.DeserializeNHATSData(nhatsData);
+
+            json_nhats = JsonConvert.DeserializeObject<JObject>(nhatsData);
+        }
     }
 }
