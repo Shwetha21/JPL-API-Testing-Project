@@ -20,6 +20,11 @@ namespace JPL_API_Testing.SentryAPI.SentryDataApiService
             json_SentryData = JsonConvert.DeserializeObject<JObject>(SentryData);
         }
 
-
+        public SentryDataApiService(int spk)
+        {
+            SentryData = SentryDataManager.GetSentryData(spk);
+            SentryDataDTO.DeserialiseSentryDataspk(SentryData);
+            json_SentryData = JsonConvert.DeserializeObject<JObject>(SentryData);
+        }
     }
 }

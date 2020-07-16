@@ -6,24 +6,24 @@ namespace JPL_API_Testing
 {
     public class SentryTests
     {
-        SentryDataApiService _scoutDataApiService = new SentryDataApiService();
+        SentryDataApiService _sentryDataApiService = new SentryDataApiService();
 
         [Test]
         public void CallingAPI_CorrectVersionResponse()
         {
-            Assert.That(_scoutDataApiService.SentryDataDTO.SentryData.signature.version, Is.EqualTo("1.1"));
+            Assert.That(_sentryDataApiService.SentryDataDTO.SentryData.signature.version, Is.EqualTo("1.1"));
         }
 
         [Test]
         public void CallingAPI_CorrectSourceResponse()
         {
-            Assert.That(_scoutDataApiService.SentryDataDTO.SentryData.signature.source, Is.EqualTo("NASA/JPL Sentry Data API"));
+            Assert.That(_sentryDataApiService.SentryDataDTO.SentryData.signature.source, Is.EqualTo("NASA/JPL Sentry Data API"));
         }
 
         [Test]
         public void CallingAPI_CorrectCountResponse()
         {
-            Assert.That(_scoutDataApiService.SentryDataDTO.SentryData.count, Is.EqualTo("1021"));
+            Assert.That(_sentryDataApiService.SentryDataDTO.SentryData.count, Is.Not.Null.Or.Zero);
         }
 
 
