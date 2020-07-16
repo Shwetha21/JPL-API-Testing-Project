@@ -67,9 +67,11 @@
     <Compile Include="FireballAPI\FireballAPIService\DataHandling\FireballModel.cs" />
     <Compile Include="FireballAPI\FireballAPIService\FBAPIService.cs" />
     <Compile Include="FireballAPI\FireballAPIService\HTTPManager\FireballAPIManager.cs" />
+    <Compile Include="FireballAPI\Tests\FireballAPIAltitudeQueryTests.cs" />
     <Compile Include="FireballAPI\Tests\FireballAPIDataTests.cs" />
     <Compile Include="FireballAPI\Tests\FireballAPIDateQueryTests.cs" />
     <Compile Include="FireballAPI\Tests\FireballAPIEnergyQueryTests.cs" />
+    <Compile Include="FireballAPI\Tests\FireballAPIImpactEnergyQueryTests.cs" />
     <Compile Include="FireballAPI\Tests\FireballAPILimitQueryTests.cs" />
     <Compile Include="FireballAPI\Tests\FireballAPIResponseTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

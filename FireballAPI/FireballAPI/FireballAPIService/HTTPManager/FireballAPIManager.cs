@@ -39,5 +39,19 @@ namespace FireballAPI.FireballAPIService.HTTPManager
             var response = client.Execute(request);
             return response.Content;
         }
+
+        public string GetFireballImpactEnergy(string impacteMin, string impacteMax, int recordLimit)
+        {
+            var request = new RestRequest($"fireball.api?impact-e-min={impacteMin}&impact-e-max={impacteMax}&limit={recordLimit}", Method.GET);
+            var response = client.Execute(request);
+            return response.Content;
+        }
+
+        public string GetFireballVelocity(int velMin, int velMax, int recordLimit)
+        {
+            var request = new RestRequest($"fireball.api?vel-min={velMin}&vel-max={velMax}&limit={recordLimit}", Method.GET);
+            var response = client.Execute(request);
+            return response.Content;
+        }
     }
 }
