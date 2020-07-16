@@ -14,21 +14,21 @@ namespace FireballAPI.FireballAPIService.HTTPManager
 
         public string GetFireball()
         {
-            var request = new RestRequest(Method.GET);
+            var request = new RestRequest("fireball.api", Method.GET);
             var response = client.Execute(request);
             return response.Content;
         }
 
         public string GetFireball(int recLimit)
         {
-            var request = new RestRequest($"?limit={recLimit}", Method.GET);
+            var request = new RestRequest($"fireball.api?limit={recLimit}", Method.GET);
             var response = client.Execute(request);
             return response.Content;
         }
 
         public string GetFireball(string dateMin, string dateMax)
         {
-            var request = new RestRequest($"?date-min={dateMin}&date-max={dateMax}", Method.GET);
+            var request = new RestRequest($"fireball.api?date-min={dateMin}&date-max={dateMax}", Method.GET);
             var response = client.Execute(request);
             return response.Content;
         }
