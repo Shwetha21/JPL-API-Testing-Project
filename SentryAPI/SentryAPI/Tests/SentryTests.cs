@@ -1,12 +1,11 @@
 ﻿using NUnit.Framework;
-using System.Linq;
-using JPL_API_Testing.SentryAPI.SentrydesDataApiService;
+using SentryAPI.SentrydesDataApiService;
 
-namespace JPL_API_Testing
+namespace SentryAPI.Tests
 {
     public class SentryTests
     {
-        SentryDataApiService _sentryDataApiService = new SentryDataApiService();
+        private SentryDataApiService _sentryDataApiService = new SentryDataApiService();
 
         [Test]
         public void CallingAPI_CorrectVersionResponse()
@@ -25,7 +24,5 @@ namespace JPL_API_Testing
         {
             Assert.That(_sentryDataApiService.SentryDataDTO.SentryData.count, Is.Not.Null.Or.Zero);
         }
-
-
     }
 }

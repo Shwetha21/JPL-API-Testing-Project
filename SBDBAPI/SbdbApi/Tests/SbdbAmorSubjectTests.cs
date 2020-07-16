@@ -1,16 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using NUnit.Framework;
+using SbdbApi.SbdbApiService;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using NUnit.Framework;
-using JPL_API_Testing.SbdbApiService;
-using JPL_API_Testing.SbdbApiService.DataHandling;
-using System.Security.Cryptography;
 
-namespace JPL_API_Testing.SbdbApi.Tests
+namespace SbdbApi.Tests
 {
-    class SbdbAmorAsteroidTests
+    internal class SbdbAmorAsteroidTests
     {
         private SbdbService _sbdbDataResponse = new SbdbService("2015ab");
 
@@ -19,136 +13,163 @@ namespace JPL_API_Testing.SbdbApi.Tests
         {
             Assert.That(_sbdbDataResponse.sbdbDTO.SbdbData.orbit.source.ToString(), Is.EqualTo("JPL"));
         }
+
         [Test]
         public void AmorOrbitCovarianceEpoch_ReturnsExpected()         //The time frame of the asteroids course
         {
             Assert.That(_sbdbDataResponse.sbdbDTO.SbdbData.orbit.cov_epoch, Is.EqualTo("2457009.5"));
         }
+
         [Test]
         public void AmorOrbitMOIDToJupiter_ReturnsExpected()                //MOID - Minimum Orbit Intersection Distance
         {
             Assert.That(_sbdbDataResponse.sbdbDTO.SbdbData.orbit.moid_jup, Is.EqualTo("3.06"));
         }
+
         [Test]
         public void AmorOrbitTrisserand_ReturnsExpected()              //A value to categories the type of orbit
         {
             Assert.That(_sbdbDataResponse.sbdbDTO.SbdbData.orbit.t_jup, Is.EqualTo("3.994"));
         }
+
         [Test]
         public void AmorOrbitConditionCode_ReturnsExpected()
         {
             Assert.That(_sbdbDataResponse.sbdbDTO.SbdbData.orbit.condition_code, Is.EqualTo("1"));
         }
+
         [Test]
         public void AmorOrbitClassNotValidBeforeDate_IsNull()
         {
             Assert.That(_sbdbDataResponse.sbdbDTO.SbdbData.orbit.not_valid_before, Is.Null);
         }
+
         [Test]
         public void AmorOrbitRootMeanSquareValue_ReturnsExpected()
         {
             Assert.That(_sbdbDataResponse.sbdbDTO.SbdbData.orbit.rms, Is.EqualTo("0.61"));
         }
+
         [Test]
         public void AmorOrbitsModelParameters_ReturnsEmptyArray()
         {
             Assert.That(_sbdbDataResponse.sbdbDTO.SbdbData.orbit.model_pars, Is.Empty);
         }
+
         [Test]
         public void AmorOrbitOrbitID_ReturnsExpected()
         {
             Assert.That(_sbdbDataResponse.sbdbDTO.SbdbData.orbit.orbit_id, Is.EqualTo("16"));
         }
+
         [Test]
         public void AmorOrbitOrbitID_MatchesAmorObjectOrbitID()
         {
             Assert.That(_sbdbDataResponse.sbdbDTO.SbdbData.orbit.orbit_id, Is.EqualTo(_sbdbDataResponse.json_sbdb["object"]["orbit_id"].ToString()));
         }
+
         [Test]
         public void AmorOrbitProducterName_ReturnsOttoMatic()
         {
             Assert.That(_sbdbDataResponse.sbdbDTO.SbdbData.orbit.producer, Is.EqualTo("Otto Matic"));
         }
+
         [Test]
         public void AmorOrbitFirstObservationDate_ReturnsExpected()
         {
             Assert.That(_sbdbDataResponse.sbdbDTO.SbdbData.orbit.first_obs, Is.EqualTo("2009-09-15"));
         }
+
         [Test]
         public void AmorOrbitSolutionDate_ReturnsExpected()
         {
             Assert.That(_sbdbDataResponse.sbdbDTO.SbdbData.orbit.soln_date, Is.EqualTo("2020-03-29 05:54:27"));
         }
+
         [Test]
         public void AmorOrbitTwoBodyModelValue_IsNull()
         {
             Assert.That(_sbdbDataResponse.sbdbDTO.SbdbData.orbit.two_body, Is.Null);
         }
+
         [Test]
         public void AmorOrbitEpochOfOsculation_ReturnsExpectedValue()
         {
             Assert.That(_sbdbDataResponse.sbdbDTO.SbdbData.orbit.epoch, Is.EqualTo("2459000.5"));
         }
+
         [Test]
         public void AmorElementsArray_ContainsAllElevenElements()
         {
             Assert.That(_sbdbDataResponse.sbdbDTO.SbdbData.orbit.elements.Count(), Is.EqualTo(11));
         }
+
         [Test]
         public void AmorOrbitEquinoxReference_ReturnsExpected()
         {
             Assert.That(_sbdbDataResponse.sbdbDTO.SbdbData.orbit.equinox, Is.EqualTo("J2000"));
         }
+
         [Test]
         public void OrbitObservedPeriodInDays_ReturnsExected()
         {
             Assert.That(_sbdbDataResponse.sbdbDTO.SbdbData.orbit.data_arc, Is.EqualTo("3848"));
         }
+
         [Test]
         public void OrbitNotValidAfterDateEntry_IsNull()
         {
             Assert.That(_sbdbDataResponse.sbdbDTO.SbdbData.orbit.not_valid_after, Is.Null);
         }
+
         [Test]
         public void AmorOrbitPerturberEphemerisCategorisation_ReturnsExpected()
         {
             Assert.That(_sbdbDataResponse.sbdbDTO.SbdbData.orbit.sb_used, Is.EqualTo("SB431-N16"));
         }
+
         [Test]
         public void AmorOrbitRadarDelayInformation_IsNull()
         {
             Assert.That(_sbdbDataResponse.sbdbDTO.SbdbData.orbit.n_del_obs_used, Is.Null);
         }
+
         [Test]
         public void OrbitClassHasOverallObservationCount()
         {
             Assert.That(_sbdbDataResponse.sbdbDTO.SbdbData.orbit.n_obs_used, Is.EqualTo("54"));
         }
+
         [Test]
         public void AmorOrbitComment_IsNull()
         {
             Assert.That(_sbdbDataResponse.sbdbDTO.SbdbData.orbit.comment, Is.Null);
         }
+
         [Test]
         public void AmorOrbitPlanetaryEphemerisCategorisation_ReturnsExpected()
         {
             Assert.That(_sbdbDataResponse.sbdbDTO.SbdbData.orbit.pe_used, Is.EqualTo("DE431"));
         }
+
         [Test]
         public void AmorOrbitLastObservationDate_ReturnsExpected()
         {
             Assert.That(_sbdbDataResponse.sbdbDTO.SbdbData.orbit.last_obs, Is.EqualTo("2020-03-29"));
         }
+
         [Test]
         public void AmorOrbitClassMOIDToEarth_ReturnsExpected()
         {
             Assert.That(_sbdbDataResponse.sbdbDTO.SbdbData.orbit.moid, Is.EqualTo("0.365"));
         }
+
         [Test]
         public void AmorOrbitRadarDopplerInformation_IsNull()
         {
             Assert.That(_sbdbDataResponse.sbdbDTO.SbdbData.orbit.n_dop_obs_used, Is.Null);
         }
+
         [TestCase(0, "e")]
         [TestCase(1, "a")]
         [TestCase(2, "q")]
@@ -164,6 +185,7 @@ namespace JPL_API_Testing.SbdbApi.Tests
         {
             Assert.That(_sbdbDataResponse.sbdbDTO.SbdbData.orbit.elements[element].name, Is.EqualTo(expected));
         }
+
         [TestCase(0, null)]
         [TestCase(1, "au")]
         [TestCase(2, "au")]
@@ -179,6 +201,7 @@ namespace JPL_API_Testing.SbdbApi.Tests
         {
             Assert.That(_sbdbDataResponse.sbdbDTO.SbdbData.orbit.elements[element].units, Is.EqualTo(expected));
         }
+
         [TestCase(0, "0.284")]
         [TestCase(1, "1.8")]
         [TestCase(2, "1.29")]
@@ -194,6 +217,7 @@ namespace JPL_API_Testing.SbdbApi.Tests
         {
             Assert.That(_sbdbDataResponse.sbdbDTO.SbdbData.orbit.elements[element].value, Is.EqualTo(expected));
         }
+
         [TestCase(0, "3.7e-07")]
         [TestCase(1, "6.9e-08")]
         [TestCase(2, "6.2e-07")]
@@ -209,6 +233,7 @@ namespace JPL_API_Testing.SbdbApi.Tests
         {
             Assert.That(_sbdbDataResponse.sbdbDTO.SbdbData.orbit.elements[element].sigma, Is.EqualTo(expected));
         }
+
         [TestCase(0, "eccentricity")]
         [TestCase(1, "semi-major axis")]
         [TestCase(2, "perihelion distance")]
@@ -224,6 +249,7 @@ namespace JPL_API_Testing.SbdbApi.Tests
         {
             Assert.That(_sbdbDataResponse.sbdbDTO.SbdbData.orbit.elements[element].title, Is.EqualTo(expected));
         }
+
         [TestCase(0, "e")]
         [TestCase(1, "a")]
         [TestCase(2, "q")]
@@ -239,51 +265,61 @@ namespace JPL_API_Testing.SbdbApi.Tests
         {
             Assert.That(_sbdbDataResponse.sbdbDTO.SbdbData.orbit.elements[element].label, Is.EqualTo(expected));
         }
+
         [Test]
         public void AmorIsAnNEO()
         {
             Assert.That(_sbdbDataResponse.json_sbdb["object"]["neo"].ToString(), Is.EqualTo("True"));
         }
+
         [Test]
         public void AmorIsNotAPHA()           //PHA - Potentially Hazardous Asteroid
         {
             Assert.That(_sbdbDataResponse.json_sbdb["object"]["pha"].ToString(), Is.EqualTo("False"));
         }
+
         [Test]
         public void AmorSpkIDTag_ReturnsExpected()                //SPK ID - ID code to identify a body and its centre of motion
         {
             Assert.That(_sbdbDataResponse.json_sbdb["object"]["spkid"].ToString(), Is.EqualTo("3467168"));
         }
+
         [Test]
-        public void AmorIsAnUnNumberedAsteroid()     //Kind - Whether the asteroid or comet is numbered (an/cn) or not (au/cu) 
+        public void AmorIsAnUnNumberedAsteroid()     //Kind - Whether the asteroid or comet is numbered (an/cn) or not (au/cu)
         {
             Assert.That(_sbdbDataResponse.json_sbdb["object"]["kind"].ToString(), Is.EqualTo("au"));
         }
+
         [Test]
         public void AmorOrbitId_ReturnsExpected()        //A unique code to identify the orbit solution
         {
             Assert.That(_sbdbDataResponse.json_sbdb["object"]["orbit_id"].ToString(), Is.EqualTo("16"));
         }
+
         [Test]
         public void AmorFullObjectName_Returns2015AB()
         {
             Assert.That(_sbdbDataResponse.json_sbdb["object"]["fullname"].ToString(), Is.EqualTo("(2015 AB)"));
         }
+
         [Test]
         public void AmorDesignationCode_Returns2015AB()        //Naming convention giving the date of discovery.
         {
             Assert.That(_sbdbDataResponse.json_sbdb["object"]["des"].ToString(), Is.EqualTo("2015 AB"));
         }
+
         [Test]
         public void AmorPrefix_IsNull()   //Null for asteroids, designate the time of the year.
         {
             Assert.That(_sbdbDataResponse.json_sbdb["object"]["prefix"], Is.Null.Or.Empty);
         }
+
         [Test]
         public void AmorIsTheGivenNameFor2015AB()
         {
             Assert.That(_sbdbDataResponse.json_sbdb["object"]["orbit_class"]["name"].ToString(), Is.EqualTo("Amor"));
         }
+
         [Test]
         public void AmorHasCode_ReturnsAMO()
         {
@@ -291,4 +327,3 @@ namespace JPL_API_Testing.SbdbApi.Tests
         }
     }
 }
-

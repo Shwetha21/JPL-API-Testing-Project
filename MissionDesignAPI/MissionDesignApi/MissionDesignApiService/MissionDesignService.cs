@@ -1,11 +1,10 @@
-﻿using System.Collections.Generic;
-using JPL_API_Testing.MissionDesignApi.MissionDesignApiService.DataHandling;
-using JPL_API_Testing.MissionDesignApiService.DataHandling;
-using JPL_API_Testing.MissionDesignApiService.HTTPManager;
+﻿using MissionDesignApi.MissionDesignApiService.DataHandling;
+using MissionDesignApi.MissionDesignApiService.HTTPManager;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
+using System.Collections.Generic;
 
-namespace JPL_API_Testing.MissionDesignApiService
+namespace MissionDesignApi.MissionDesignApiService
 {
     public class MissionDesignService
     {
@@ -22,6 +21,7 @@ namespace JPL_API_Testing.MissionDesignApiService
             json_MissionDesign = JsonConvert.DeserializeObject<JObject>(MissionDesignData);
             missionDesignDataList = GetMissionDesignData();
         }
+
         private List<MissionDesignKeyValues> GetMissionDesignData() => MissionDesignDTO.ConvertToList();
     }
 }

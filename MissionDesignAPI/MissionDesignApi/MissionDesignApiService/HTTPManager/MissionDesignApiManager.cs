@@ -1,6 +1,6 @@
 ﻿using RestSharp;
 
-namespace JPL_API_Testing.MissionDesignApiService.HTTPManager
+namespace MissionDesignApi.MissionDesignApiService.HTTPManager
 {
     public class MissionDesignApiManager
     {
@@ -10,6 +10,7 @@ namespace JPL_API_Testing.MissionDesignApiService.HTTPManager
         {
             client = new RestClient(JPL_API_Library.ConfigReader.BaseUrl);
         }
+
         public string GetMissionDesignData(string desiredObject)
         {
             var request = new RestRequest("mdesign.api?sstr=" + desiredObject);

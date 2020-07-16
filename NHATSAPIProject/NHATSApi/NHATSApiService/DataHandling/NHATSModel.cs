@@ -1,7 +1,5 @@
-﻿
-namespace JPL_API_Testing.NHATSApi.NHATSApiService.DataHandling
+﻿namespace NHATSApi.NHATSApiService.DataHandling
 {
-
     public class NHATSRoot
     {
         public string count { get; set; }
@@ -50,5 +48,4 @@ namespace JPL_API_Testing.NHATSApi.NHATSApiService.DataHandling
         public string dv { get; set; }
         public string dur { get; set; }
     }
-
 }

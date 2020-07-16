@@ -1,8 +1,8 @@
-﻿using RestSharp;
-using JPL_API_Library;
+﻿using JPL_API_Library;
+using RestSharp;
 
-namespace JPL_API_Testing.ScoutDataApi.ScoutDataApiService.HTTPManager
-{ 
+namespace ScoutDataApi.ScoutDataApiService.HTTPManager
+{
     public class ScoutAPIManager
     {
         private readonly IRestClient client;

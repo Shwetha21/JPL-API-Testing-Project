@@ -1,18 +1,17 @@
-﻿using JPL_API_Testing.JPLAPIService;
+﻿using NHATSApi.NHATSApiService;
 using NUnit.Framework;
 
-namespace NHATSAPIProject.NHATSApi.NHATSTestsFolder
+namespace NHATSApi.Tests
 {
     public class NHATSTestParameter
     {
-        private NHATSAPIServices _nhatsSerivice = new NHATSAPIServices("2016%20TB18","6","360","8","2020-2045");
+        private NHATSAPIServices _nhatsSerivice = new NHATSAPIServices("2016%20TB18", "6", "360", "8", "2020-2045");
         private NHATSAPIServices nhatsSerivice = new NHATSAPIServices("2016%20TB18", "0", "360", "8", "2020-2045");
         private NHATSAPIServices nhatsSerivicestay = new NHATSAPIServices("2016%20TB18", "6", "360", "0", "2020-2045");
         private NHATSAPIServices nhatsSerivicedur = new NHATSAPIServices("2016%20TB18", "6", "0", "8", "2020-2045");
         private NHATSAPIServices nhatsSerivicelaunch = new NHATSAPIServices("2016%20TB18", "6", "360", "8", "2020-2100");
         private NHATSAPIServices nhatsSerivicenoparameter = new NHATSAPIServices("2016%20TB18", "0", "0", "0", "0");
         private NHATSAPIServices nhatsSerivicenoparameters = new NHATSAPIServices("2016%20TB18", "", "", "", "");
-
 
         [Test]
         public void CheckingForCorrectresponseWhenCorrectDataIsgiven()
@@ -56,5 +55,4 @@ namespace NHATSAPIProject.NHATSApi.NHATSTestsFolder
             Assert.That(nhatsSerivicenoparameters.nhatsData, Does.Contain("invalid DV mode value (expecting 4 5 6 7 8 9 10 11 12)"));
         }
     }
-
 }

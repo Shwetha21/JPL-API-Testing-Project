@@ -1,9 +1,8 @@
-﻿using RestSharp;
-using JPL_API_Library;
+﻿using JPL_API_Library;
+using RestSharp;
 
+namespace NHATSApi.NHATSApiService.HTTPManager
 
-namespace NHATSAPIProject.NHATSApi.NHATSApiService.HTTPManager
-    
 {
     public class NHATSAPIManager
     {
@@ -13,6 +12,7 @@ namespace NHATSAPIProject.NHATSApi.NHATSApiService.HTTPManager
         {
             client = new RestClient(ConfigReader.BaseUrl);
         }
+
         public string GetNearEarthOrbitData()
         {
             var request = new RestRequest("nhats.api");
@@ -27,7 +27,7 @@ namespace NHATSAPIProject.NHATSApi.NHATSApiService.HTTPManager
             return response.Content;
         }
 
-        public string GetNearEarthOrbitData(string asteroid,string velocity,string duration,string stay,string launch)
+        public string GetNearEarthOrbitData(string asteroid, string velocity, string duration, string stay, string launch)
         {
             var request = new RestRequest($"nhats.api?des={asteroid}&dv={velocity}&dur={duration}&stay={stay}&launch={launch}");
             var response = client.Execute(request, Method.GET);

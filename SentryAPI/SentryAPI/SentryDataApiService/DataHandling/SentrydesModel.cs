@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace JPL_API_Testing.SentryAPI.SentrydesDataApiService.DataHandling
+﻿namespace SentryAPI.SentrydesDataApiService.DataHandling
 {
     public class desRoot
     {
@@ -59,5 +53,4 @@ namespace JPL_API_Testing.SentryAPI.SentrydesDataApiService.DataHandling
         public string sigma_imp { get; set; }
         public string ps { get; set; }
     }
-
 }

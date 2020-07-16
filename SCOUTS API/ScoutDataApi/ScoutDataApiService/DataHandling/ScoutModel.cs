@@ -1,6 +1,5 @@
-﻿namespace JPL_API_Testing.ScoutDataApi.ScoutDataApiService.DataHandling
+﻿namespace ScoutDataApi.ScoutDataApiService.DataHandling
 {
-
     public class ScoutRoot
     {
         public string count { get; set; }

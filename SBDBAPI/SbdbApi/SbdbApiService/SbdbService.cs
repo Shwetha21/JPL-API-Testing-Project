@@ -1,9 +1,9 @@
-﻿using JPL_API_Testing.SbdbApiService.DataHandling;
-using JPL_API_Testing.SbdbApiService.HTTPManager;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
+using SbdbApi.SbdbApiService.DataHandling;
+using SbdbApi.SbdbApiService.HTTPManager;
 
-namespace JPL_API_Testing.SbdbApiService
+namespace SbdbApi.SbdbApiService
 {
     public class SbdbService
     {

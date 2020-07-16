@@ -1,9 +1,9 @@
-﻿using JPL_API_Testing.ScoutDataApi.ScoutDataApiService.DataHandling;
-using JPL_API_Testing.ScoutDataApi.ScoutDataApiService.HTTPManager;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
+using ScoutDataApi.ScoutDataApiService.DataHandling;
+using ScoutDataApi.ScoutDataApiService.HTTPManager;
 
-namespace JPL_API_Testing.ScoutDataApiService
+namespace ScoutDataApi.ScoutDataApiService
 {
     public class ScoutDataAPIService
     {

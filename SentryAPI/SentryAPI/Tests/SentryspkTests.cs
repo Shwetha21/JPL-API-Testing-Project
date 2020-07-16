@@ -1,12 +1,11 @@
 ﻿using NUnit.Framework;
-using System.Linq;
-using JPL_API_Testing.SentryAPI.SentrydesDataApiService;
+using SentryAPI.SentrydesDataApiService;
 
-namespace JPL_API_Testing
+namespace SentryAPI.Tests
 {
     public class SentryspkTests
     {
-        SentryDataApiService _sentryDataApiService = new SentryDataApiService(2029075);
+        private SentryDataApiService _sentryDataApiService = new SentryDataApiService(2029075);
 
         [Test]
         public void checkNobs()
@@ -145,11 +144,5 @@ namespace JPL_API_Testing
         {
             Assert.That(_sentryDataApiService.SentryDataDTO.spkData.summary.des, Is.EqualTo("29075"));
         }
-
-
-
-
-
-
     }
 }

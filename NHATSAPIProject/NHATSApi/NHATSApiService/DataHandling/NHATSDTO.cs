@@ -1,15 +1,12 @@
-﻿
+﻿using Newtonsoft.Json;
 
-using Newtonsoft.Json;
-
-namespace JPL_API_Testing.NHATSApi.NHATSApiService.DataHandling
+namespace NHATSApi.NHATSApiService.DataHandling
 {
     public class NHATSDTO
     {
         public NHATSRoot NHATSData { get; set; }
 
         public NHATSSpecificRoot NHATSSpecificData { get; set; }
-
 
         public void DeserializeNHATSData(string NHATSResponse)
         {
@@ -20,7 +17,5 @@ namespace JPL_API_Testing.NHATSApi.NHATSApiService.DataHandling
         {
             NHATSSpecificData = JsonConvert.DeserializeObject<NHATSSpecificRoot>(NHATSSpecificResponse);
         }
-
-        
     }
 }

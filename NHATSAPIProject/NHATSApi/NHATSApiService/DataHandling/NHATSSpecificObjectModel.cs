@@ -1,8 +1,5 @@
-﻿
-
-namespace JPL_API_Testing.NHATSApi.NHATSApiService.DataHandling
+﻿namespace NHATSApi.NHATSApiService.DataHandling
 {
-
     public class NHATSSpecificRoot
     {
         public string min_size { get; set; }
@@ -86,5 +83,4 @@ namespace JPL_API_Testing.NHATSApi.NHATSApiService.DataHandling
         public string source { get; set; }
         public string version { get; set; }
     }
-
 }

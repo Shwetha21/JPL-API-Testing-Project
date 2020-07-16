@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Globalization;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace JPL_API_Testing.CadApi.CadApiService.DataHandling
+﻿namespace CadApi.CadApiService.DataHandling
 {
     public class CADKeyValues
     {

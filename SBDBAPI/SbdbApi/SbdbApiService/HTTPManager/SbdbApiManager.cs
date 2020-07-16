@@ -1,6 +1,6 @@
 ﻿using RestSharp;
 
-namespace JPL_API_Testing.SbdbApiService.HTTPManager
+namespace SbdbApi.SbdbApiService.HTTPManager
 {
     public class SbdbApiManager
     {
@@ -10,6 +10,7 @@ namespace JPL_API_Testing.SbdbApiService.HTTPManager
         {
             client = new RestClient(JPL_API_Library.ConfigReader.BaseUrl);
         }
+
         public string GetSmallBodyData(string asteroid)
         {
             var request = new RestRequest("sbdb.api?sstr=" + asteroid);

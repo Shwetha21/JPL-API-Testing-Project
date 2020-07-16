@@ -1,18 +1,18 @@
-﻿using System.Collections.Generic;
-using JPL_API_Testing.CadApi.CadApiService.DataHandling;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
+using System.Collections.Generic;
 
-namespace JPL_API_Testing.JPLAPIService.DataHandling
+namespace CadApi.CadApiService.DataHandling
 {
     public class APIDTO
     {
         public CADRoot CADData { get; set; }
         private List<CADKeyValues> cadList = new List<CADKeyValues>();
-        
+
         public void DeserializeCADData(string CADResponse)
         {
             CADData = JsonConvert.DeserializeObject<CADRoot>(CADResponse);
         }
+
         public List<CADKeyValues> ConvertToList()
         {
             var valueArray = CADData.data;

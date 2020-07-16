@@ -1,17 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using JPL_API_Testing.CadApi;
+﻿using CadApi.CadApiService;
 using NUnit.Framework;
-using JPL_API_Testing.JPLAPIService;
 
-namespace JPL_API_Testing.CadApi.Tests
+namespace CadApi.Tests
 {
-    class CADDataTests
+    internal class CADDataTests
     {
         private APIService _cadService = new APIService();
+
         [TestCase("des")]
         [TestCase("orbit_id")]
         [TestCase("jd")]
@@ -27,56 +22,67 @@ namespace JPL_API_Testing.CadApi.Tests
         {
             Assert.That(_cadService.cadDataList[0], Has.Property(expected));
         }
+
         [Test]
         public void desDataFieldIsNotNull()
         {
             Assert.That(_cadService.cadDataList[0].des, Is.Not.Null.Or.Empty);
         }
+
         [Test]
         public void objectIdDataFieldIsNotNull()
         {
             Assert.That(_cadService.cadDataList[0].orbit_id, Is.Not.Null.Or.Empty);
         }
+
         [Test]
         public void jdDataFieldIsNotNull()
         {
             Assert.That(_cadService.cadDataList[0].jd, Is.Not.Null.Or.Empty);
         }
+
         [Test]
         public void cdDataFieldIsNotNull()
         {
             Assert.That(_cadService.cadDataList[0].cd, Is.Not.Null.Or.Empty);
         }
+
         [Test]
         public void distDataFieldIsNotNull()
         {
             Assert.That(_cadService.cadDataList[0].dist, Is.Not.Null.Or.Empty);
         }
+
         [Test]
         public void distMinDataFieldIsNotNull()
         {
             Assert.That(_cadService.cadDataList[0].dist_min, Is.Not.Null.Or.Empty);
         }
+
         [Test]
         public void distMaxDataFieldIsNotNull()
         {
             Assert.That(_cadService.cadDataList[0].dist_max, Is.Not.Null.Or.Empty);
         }
+
         [Test]
         public void vRelDataFieldIsNotNull()
         {
             Assert.That(_cadService.cadDataList[0].v_rel, Is.Not.Null.Or.Empty);
         }
+
         [Test]
         public void vInfDataFieldIsNotNull()
         {
             Assert.That(_cadService.cadDataList[0].v_inf, Is.Not.Null.Or.Empty);
         }
+
         [Test]
         public void tSigmaDataFieldIsNotNull()
         {
             Assert.That(_cadService.cadDataList[0].t_sigma_f, Is.Not.Null.Or.Empty);
         }
+
         [Test]
         public void hFieldIsNotNull()
         {
