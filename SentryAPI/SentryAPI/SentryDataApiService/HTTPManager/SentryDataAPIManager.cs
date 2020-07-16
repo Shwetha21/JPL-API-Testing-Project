@@ -33,5 +33,11 @@ namespace JPL_API_Testing.SentryAPI.SentrydesDataApiService.HTTPManager
             return response.Content;
         }
 
+        public string GetSentryHmaxData(int hMax)
+        {
+            var request = new RestRequest($"sentry.api?h-max={hMax}", Method.GET);
+            var response = client.Execute(request);
+            return response.Content;
+        }
     }
 }
