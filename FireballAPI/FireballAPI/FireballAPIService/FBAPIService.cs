@@ -13,7 +13,7 @@ namespace FireballAPI.FireballAPIService
         public JObject json_fireball;
         public string fireballResponse;
 
-        public FBAPIService(string queryType, int recordLimit, string dateMin = "2019-11-28", string dateMax = "2019-11-29", string energyMin = "8.0", string energyMax = "10.0", string impacteMin = "3.0", string impacteMax = "10.0")
+        public FBAPIService(string queryType, int recordLimit, string dateMin = "2019-11-28", string dateMax = "2019-11-29", string energyMin = "8.0", string energyMax = "10.0", string impacteMin = "3.0", string impacteMax = "10.0", int velMin = 20, int velMax = 50)
         {
             switch (queryType.ToLower())
             {
@@ -31,6 +31,9 @@ namespace FireballAPI.FireballAPIService
                     break;
                 case "impact-e":
                     ImpactEnergyQueryRequestService(impacteMin, impacteMax, recordLimit);
+                    break;
+                case "altitude":
+                    VelocityQueryRequestService(velMin, velMax, recordLimit);
                     break;
             }
             
@@ -62,6 +65,12 @@ namespace FireballAPI.FireballAPIService
         public void ImpactEnergyQueryRequestService(string impacteMin, string impacteMax, int recordLimit)
         {
             fireballResponse = fireballAPIManager.GetFireballImpactEnergy(impacteMin, impacteMax, recordLimit);
+            DataService();
+        }
+
+        public void VelocityQueryRequestService(int velMin, int velMax, int recordLimit)
+        {
+            fireballResponse = fireballAPIManager.GetFireballVelocity(velMin, velMax, recordLimit);
             DataService();
         }
 
