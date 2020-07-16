@@ -2,12 +2,10 @@
 using System.Linq;
 using JPL_API_Testing.SentryAPI.SentrydesDataApiService;
 
-
 namespace JPL_API_Testing.SentryAPI.Tests
 {
     public class SentrydesTests
     {
-
         SentrydesDataAPIService _sentryDataApiService = new SentrydesDataAPIService(29075);
 
         [Test]

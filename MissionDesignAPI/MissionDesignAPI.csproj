@@ -68,10 +68,13 @@
     <Compile Include="MissionDesignApi\MissionDesignApiService\MissionDesignService.cs" />
     <Compile Include="MissionDesignApi\Tests\MissionDesignDataTests.cs" />
     <Compile Include="MissionDesignApi\Tests\MissionDesignGeneralTests.cs" />
+    <Compile Include="MissionDesignApi\Tests\NeowiseCometDataTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="app.config" />
+    <None Include="..\JPL_API_Library\app.config">
+      <Link>app.config</Link>
+    </None>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
