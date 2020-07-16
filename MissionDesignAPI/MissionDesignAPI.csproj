@@ -68,6 +68,7 @@
     <Compile Include="MissionDesignApi\MissionDesignApiService\MissionDesignService.cs" />
     <Compile Include="MissionDesignApi\Tests\MissionDesignDataTests.cs" />
     <Compile Include="MissionDesignApi\Tests\MissionDesignGeneralTests.cs" />
+    <Compile Include="MissionDesignApi\Tests\NeowiseCometDataTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
