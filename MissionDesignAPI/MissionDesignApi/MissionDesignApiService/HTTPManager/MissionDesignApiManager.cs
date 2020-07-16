@@ -10,9 +10,9 @@ namespace JPL_API_Testing.MissionDesignApiService.HTTPManager
         {
             client = new RestClient(JPL_API_Library.ConfigReader.BaseUrl);
         }
-        public string GetMissionDesignData()
+        public string GetMissionDesignData(string desiredObject)
         {
-            var request = new RestRequest("mdesign.api?sstr=apophis");
+            var request = new RestRequest("mdesign.api?sstr=" + desiredObject);
             var response = client.Execute(request, Method.GET);
             return response.Content;
         }
