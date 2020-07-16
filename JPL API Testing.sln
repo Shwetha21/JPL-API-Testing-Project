@@ -22,6 +22,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SentryAPI", "SentryAPI\Sent
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SBDBAPI", "SBDBAPI\SBDBAPI.csproj", "{55E7BA0F-5D7E-4858-89D9-36A9E746604E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SCOUTS API", "SCOUTS API\SCOUTS API.csproj", "{9FD03AFE-3DF1-469A-93CC-BB1ED50FD8E6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -56,6 +58,10 @@ Global
 		{55E7BA0F-5D7E-4858-89D9-36A9E746604E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{55E7BA0F-5D7E-4858-89D9-36A9E746604E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{55E7BA0F-5D7E-4858-89D9-36A9E746604E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9FD03AFE-3DF1-469A-93CC-BB1ED50FD8E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FD03AFE-3DF1-469A-93CC-BB1ED50FD8E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FD03AFE-3DF1-469A-93CC-BB1ED50FD8E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FD03AFE-3DF1-469A-93CC-BB1ED50FD8E6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
