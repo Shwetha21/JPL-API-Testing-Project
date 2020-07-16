@@ -34,7 +34,7 @@ namespace JPL_API_Testing.JPLAPIService
             cadData = cadManager.GetCloseApproachData(spk);
             cadDTO.DeserializeCADData(cadData);
             json_cad = JsonConvert.DeserializeObject<JObject>(cadData);
-            cadDataList = GetCADData();
+            if (cadDTO.CADData.count != "0") cadDataList = GetCADData();
         }
         public APIService(string type)
         {
