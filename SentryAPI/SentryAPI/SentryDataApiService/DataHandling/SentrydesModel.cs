@@ -6,10 +6,6 @@ using System.Threading.Tasks;
 
 namespace JPL_API_Testing.SentryAPI.SentrydesDataApiService.DataHandling
 {
-
-
-
-
     public class desRoot
     {
         public Summary summary { get; set; }
