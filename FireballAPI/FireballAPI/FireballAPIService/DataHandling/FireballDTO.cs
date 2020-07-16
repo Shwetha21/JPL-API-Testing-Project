@@ -1,7 +1,7 @@
 ﻿using Newtonsoft.Json;
 using System.Collections.Generic;
 
-namespace JPL_API_Testing.FireballAPI.FireballAPIService.DataHandling
+namespace FireballAPI.FireballAPIService.DataHandling
 {
     public class FireballDTO
     {

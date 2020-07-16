@@ -2,7 +2,7 @@
 using NUnit.Framework;
 using System.Linq;
 
-namespace JPL_API_Testing.FireballAPI
+namespace FireballAPI
 {
     public class FireballAPIResponseTests
     {

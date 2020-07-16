@@ -1,7 +1,7 @@
 ﻿using JPL_API_Testing.FireballAPI.FireballAPIService;
 using NUnit.Framework;
 
-namespace JPL_API_Testing.FireballAPI
+namespace FireballAPI
 {
     public class FireballAPILimitQuery
     {

@@ -1,4 +1,4 @@
-﻿namespace JPL_API_Testing.FireballAPI.FireballAPIService.DataHandling
+﻿namespace FireballAPI.FireballAPIService.DataHandling
 {
     public class FireballModel
     {
