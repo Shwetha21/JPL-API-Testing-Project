@@ -63,6 +63,7 @@ it's respective stories & epics.
 - Focussed on the api's happy path
 - Potentially keeping mind of what the application could look like when there are more solutions rather than just the one
 - Look towards testing the different data that comes back from the apis bad path
+- 
 #### Sprint 2 - Retrospective
 
 ##### Start
@@ -74,8 +75,56 @@ it's respective stories & epics.
 ##### Continue
 - Keep everyone informed
 - Updated local branches before work
-- ##### Before Sprint 2
+
+##### Before Sprint 2
 <img src="Sprint2Api.PNG" width="3000" />
 
 ##### After Sprint 2
 <img src="Sprint2AfterApi.PNG" width="3000" />
+
+#### Sprint 3
+#### Goal: To Create seperate projects for different API and do more tests for bad path
+
+* To create seperate project inside a same solution for different file and have a common library to hold the data shared.
+* Continue to work individually on Happy and bad paths.
+
+#### Sprint 3 - Review
+
+- Sprint Backlog items have been completed.
+- None has been pushed back into the project backlog.
+- Focussed on Creating the seperate projects for each API.
+- Focussed on Bad path and happy path.
+
+##### Before Sprint 3
+<img src="Sprint3APIStart.PNG" width="3000" />
+
+##### After Sprint 3
+<img src="Sprint£APIEnd.PNG" width="3000" />
+
+#### Project retrospective
+
+#### What went well
+- Communication between Team Mates.
+- Worked well Independently and collaborating with others.
+- Small Commits and frequent merges avoided conflict.
+- Changing the scrum master helped distribute the workload.
+- People were willing to provide assistance. 
+
+#### What we could have improved
+- More research into understanding the data of the API response.
+
+#### What we could hae done with more Time
+- Uniform tests across all API's.
+- Worked on Scouts API.
+- Making app.config global.
+
+#### Class diagram can be found in each projects.
+
+The name is as follows:
+- CADAPIClassDiagram.cd
+- FireballAPIClassDiagram.cd
+- MissionDesignAPIClassDiagram.cd
+- NHATSClassDiagram.cd
+- SBDBAPIClassDiagram.cd
+- SCOUTSAPIClassDiagram.cd
+- SentryAPIClassDiagram.cd
