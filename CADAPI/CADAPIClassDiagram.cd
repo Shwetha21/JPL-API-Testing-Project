@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="CadApi.CadApiService.APIService">
+    <Position X="5.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEwAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAgAAAABA=</HashCode>
+      <FileName>CadApi\CadApiService\CADAPIService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CadApi.CadApiService.DataHandling.APIDTO">
+    <Position X="7.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAAAAAAAAAAAAEAAAAAAAAEgAAAAAAAAA=</HashCode>
+      <FileName>CadApi\CadApiService\DataHandling\CADDTO.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="CADData" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="CadApi.CadApiService.DataHandling.CADKeyValues">
+    <Position X="3.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACIAAAAAAQACAAAAAAgAAAAAAAIgAAQCAAAAAIEAA=</HashCode>
+      <FileName>CadApi\CadApiService\DataHandling\CADKeyValues.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CadApi.CadApiService.DataHandling.CADRoot">
+    <Position X="10.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAQAAAAAAAAAABAAAAAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>CadApi\CadApiService\DataHandling\CADModel.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="signature" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="CadApi.CadApiService.DataHandling.Signature">
+    <Position X="13.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CadApi\CadApiService\DataHandling\CADModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CadApi.CadApiService.HTTPManager.APIManager">
+    <Position X="2" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAABAAAAAA=</HashCode>
+      <FileName>CadApi\CadApiService\HTTPManager\CADAPIManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CadApi.Tests.CADDataTests">
+    <Position X="9.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAIAACAGAAAAAIAAAAAAAAAAAAAQQAAAEAQCAAEAAg=</HashCode>
+      <FileName>CadApi\Tests\CADDataTests.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CadApi.Tests.CADDistanceLimitQueryTests">
+    <Position X="3.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>UAAEAAACAAAAAAAAAAIAAAAAAAAAAAIAAAAAAIAAAAA=</HashCode>
+      <FileName>CadApi\Tests\CADDistanceLimitQueryTests.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CadApiService.Tests.CADTests">
+    <Position X="7.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAAAAAACAAAAAAACAAAEAIAAAAAAAAAAA=</HashCode>
+      <FileName>CadApi\Tests\CADGeneralTests.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CadApiService.Tests.CADLimitQueryTypeTests">
+    <Position X="2" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAgAAAAgABAAAAAAAAAAABASAAAABIACAAAAAAAAAA=</HashCode>
+      <FileName>CadApi\Tests\CADLimitQueryTypeTests.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CadApiService.Tests.CADSpecificObjectQueryTest">
+    <Position X="5.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAAAAEAAAAEAAAAAACKAKAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CadApi\Tests\CADSpecificObjectQueryTest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

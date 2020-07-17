@@ -1,0 +1,226 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="SentryAPI.SentrydesDataApiService.DataHandling.desRoot">
+    <Position X="10" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAgAA=</HashCode>
+      <FileName>SentryAPI\SentryDataApiService\DataHandling\SentrydesModel.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="summary" />
+      <Property Name="signature" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SentryAPI.SentrydesDataApiService.DataHandling.desSummary">
+    <Position X="13.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QIQgAAAACAAAACQIABABggEJAAAAAgEAQgBgAAACAAA=</HashCode>
+      <FileName>SentryAPI\SentryDataApiService\DataHandling\SentrydesModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SentryAPI.SentrydesDataApiService.DataHandling.desSignature">
+    <Position X="1.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SentryAPI\SentryDataApiService\DataHandling\SentrydesModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SentryAPI.SentrydesDataApiService.DataHandling.desDatum">
+    <Position X="3.25" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAIAAAAAAAQAQAAAAAAAAAAAABAgAgAgAQAAAAA=</HashCode>
+      <FileName>SentryAPI\SentryDataApiService\DataHandling\SentrydesModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SentryAPI.SentrydesDataApiService.DataHandling.SentryDTO">
+    <Position X="7.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAEAAQIACQAAAAAAAAAAAAgACAAAACAAIAAA=</HashCode>
+      <FileName>SentryAPI\SentryDataApiService\DataHandling\SentryDTO.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="SentryData" />
+      <Property Name="spkData" />
+      <Property Name="desData" />
+      <Property Name="hmaxData" />
+      <Property Name="PsminData" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SentryAPI.SentrydesDataApiService.DataHandling.HmaxRoot">
+    <Position X="11.75" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAAAAABAAAAAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>SentryAPI\SentryDataApiService\DataHandling\SentryHmaxModel.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="signature" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SentryAPI.SentrydesDataApiService.DataHandling.HmaxSignature">
+    <Position X="5.5" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SentryAPI\SentryDataApiService\DataHandling\SentryHmaxModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SentryAPI.SentrydesDataApiService.DataHandling.HmaxDatum">
+    <Position X="10" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAIAAAAAAAIAAAAggAJAAAAAgEAQAAgAAACAgA=</HashCode>
+      <FileName>SentryAPI\SentryDataApiService\DataHandling\SentryHmaxModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SentryAPI.SentrydesDataApiService.DataHandling.SentryRoot">
+    <Position X="5.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAAAAABAAAAAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>SentryAPI\SentryDataApiService\DataHandling\SentryModel.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="signature" />
+      <Property Name="data" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SentryAPI.SentrydesDataApiService.DataHandling.Signature">
+    <Position X="9.25" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SentryAPI\SentryDataApiService\DataHandling\SentryModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SentryAPI.SentrydesDataApiService.DataHandling.Datum">
+    <Position X="1.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAIAAAAAAAIAAAAggAJAAAAAgEAQAAgAAACAgA=</HashCode>
+      <FileName>SentryAPI\SentryDataApiService\DataHandling\SentryModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SentryAPI.SentrydesDataApiService.DataHandling.PsminRoot">
+    <Position X="5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAAAAABAAAAAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>SentryAPI\SentryDataApiService\DataHandling\SentryPs-minModel.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="signature" />
+      <Property Name="data" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SentryAPI.SentrydesDataApiService.DataHandling.PsminSignature">
+    <Position X="8.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SentryAPI\SentryDataApiService\DataHandling\SentryPs-minModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SentryAPI.SentrydesDataApiService.DataHandling.PsminDatum">
+    <Position X="12" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAIAAAAAAAIAAAAggAJAAAAAgEAQAAgAAACAgA=</HashCode>
+      <FileName>SentryAPI\SentryDataApiService\DataHandling\SentryPs-minModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SentryAPI.SentrydesDataApiService.DataHandling.spkRoot">
+    <Position X="3.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAgAA=</HashCode>
+      <FileName>SentryAPI\SentryDataApiService\DataHandling\SentryspkModel.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="summary" />
+      <Property Name="signature" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SentryAPI.SentrydesDataApiService.DataHandling.Summary">
+    <Position X="7.25" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QIQgAAAACAAAACQIABABggEJAAAAAgEAQgBgAAACAAA=</HashCode>
+      <FileName>SentryAPI\SentryDataApiService\DataHandling\SentryspkModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SentryAPI.SentrydesDataApiService.DataHandling.spkSignature">
+    <Position X="5.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SentryAPI\SentryDataApiService\DataHandling\SentryspkModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SentryAPI.SentrydesDataApiService.DataHandling.spkDatum">
+    <Position X="1.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAIAAAAAAAQAQAAAAAAAAAAAABAgAgAgAQAAAAA=</HashCode>
+      <FileName>SentryAPI\SentryDataApiService\DataHandling\SentryspkModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SentryAPI.SentrydesDataApiService.HTTPManager.SentryAPIManager">
+    <Position X="1.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAACAAAAAAAAAAAAAAAAAAAAAQAAAABAAABAA=</HashCode>
+      <FileName>SentryAPI\SentryDataApiService\HTTPManager\SentryDataAPIManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SentryAPI.SentrydesDataApiService.SentryDataApiService">
+    <Position X="3.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAQAAAAAAAgAAAAAAAICAAAAAAAAA=</HashCode>
+      <FileName>SentryAPI\SentryDataApiService\SentryDataApiService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SentryAPI.SentrydesDataApiService.SentrydesDataAPIService">
+    <Position X="3.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAQAAAAAAAgAAAAAAAICAAAAAAAAA=</HashCode>
+      <FileName>SentryAPI\SentryDataApiService\SentrydesDataAPIService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SentryAPI.SentrydesDataApiService.SentryHmaxDataAPIService">
+    <Position X="7.25" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAQAAAAAAAgAAAAAAAICAAAAAAAAA=</HashCode>
+      <FileName>SentryAPI\SentryDataApiService\SentryHmaxDataAPIService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SentryAPI.SentrydesDataApiService.SentryPsminDataAPIService">
+    <Position X="11.75" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAQAAAAAAAgAAAAAAAICAAAAAAAAA=</HashCode>
+      <FileName>SentryAPI\SentryDataApiService\SentryPsminDataAPIService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SentryAPI.Tests.SentrydesTests">
+    <Position X="13.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAQAAAAAQAAEIgAAgAAkAIEAAAAAAAAiQAABAhBAABA=</HashCode>
+      <FileName>SentryAPI\Tests\SentrydesTests.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SentryAPI.Tests.SentryPsminTests">
+    <Position X="3.25" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAACAAAAEAACAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>SentryAPI\Tests\SentryPsminTests.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SentryAPI.Tests.SentryspkTests">
+    <Position X="5.5" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAQAAIIggAgAAkAIEAAEAAAAQiQAABAgBAABA=</HashCode>
+      <FileName>SentryAPI\Tests\SentryspkTests.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SentryAPI.Tests.SentryTests">
+    <Position X="11.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAACAAAAEAACAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>SentryAPI\Tests\SentryTests.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JPL_API_Testing.SentryAPI.Tests.SentryHmaxTests">
+    <Position X="9.75" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAACAAAAEAACAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>SentryAPI\Tests\SentryHmaxTests.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

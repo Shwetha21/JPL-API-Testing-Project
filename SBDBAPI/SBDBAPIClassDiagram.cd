@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="SbdbApi.SbdbApiService.DataHandling.SbdbDTO">
+    <Position X="9" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAEAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SbdbApi\SbdbApiService\DataHandling\SbdbDTO.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="SbdbData" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SbdbApi.SbdbApiService.DataHandling.SbdbRoot">
+    <Position X="10" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAACAAAA=</HashCode>
+      <FileName>SbdbApi\SbdbApiService\DataHandling\SbdbModel.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="signature" />
+      <Property Name="orbit" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SbdbApi.SbdbApiService.DataHandling.Object">
+    <Position X="3" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAAAAQAAggAAAAAAAIlAAAAAAAAACAAA=</HashCode>
+      <FileName>SbdbApi\SbdbApiService\DataHandling\SbdbModel.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="orbit_class" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SbdbApi.SbdbApiService.DataHandling.Orbit_Class">
+    <Position X="10.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAIAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SbdbApi\SbdbApiService\DataHandling\SbdbModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SbdbApi.SbdbApiService.DataHandling.Signature">
+    <Position X="7" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SbdbApi\SbdbApiService\DataHandling\SbdbModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SbdbApi.SbdbApiService.DataHandling.Orbit">
+    <Position X="9" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAQAAAAAIBACFBJAAAIAAhQASAAAIQJAQkAEAAAQBAA=</HashCode>
+      <FileName>SbdbApi\SbdbApiService\DataHandling\SbdbModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SbdbApi.SbdbApiService.DataHandling.Element">
+    <Position X="1" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAABAAAAAAAAAAAAAUACAQAAAAAAAAAAA=</HashCode>
+      <FileName>SbdbApi\SbdbApiService\DataHandling\SbdbModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SbdbApi.SbdbApiService.HTTPManager.SbdbApiManager">
+    <Position X="7" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAIAA=</HashCode>
+      <FileName>SbdbApi\SbdbApiService\HTTPManager\SbdbApiManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SbdbApi.SbdbApiService.SbdbService">
+    <Position X="12" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAQAEAAAAAA=</HashCode>
+      <FileName>SbdbApi\SbdbApiService\SbdbService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SbdbApi.Tests.SbdbAmorAsteroidTests">
+    <Position X="0.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>kABAQBQAFFjIQCAMAkAEoQQAAQAAgQYoAhBQACCAAAA=</HashCode>
+      <FileName>SbdbApi\Tests\SbdbAmorSubjectTests.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SbdbApi.Tests.SbdbTests">
+    <Position X="5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACACAAAAAAAAABAAAAAIAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SbdbApi\Tests\SbdbGeneralResponseTests.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SbdbApi.Tests.SbdbObjectTests">
+    <Position X="12.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AiAABAQQAACAAgAAAAAAAAAAEAAAAAAAAAAAAogAAAA=</HashCode>
+      <FileName>SbdbApi\Tests\SbdbObjectTests.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SbdbApi.Tests.SbdbOrbitTests">
+    <Position X="3" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AASQgQAIAAiAKBEgCIAggAgCCAAACGBAAAAAFAAEEAQ=</HashCode>
+      <FileName>SbdbApi\Tests\SbdbOrbitTests.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JPL_API_Testing.SbdbApi.Tests.SbdbSignatureTests">
+    <Position X="5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAACAAAAAAACAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>SbdbApi\Tests\SbdbSignatureTests.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

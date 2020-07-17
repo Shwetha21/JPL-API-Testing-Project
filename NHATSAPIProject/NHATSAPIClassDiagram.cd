@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="NHATSApi.NHATSApiService.DataHandling.NHATSDTO">
+    <Position X="10.5" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAAAAAAAAAAACAgAAAAAAAAAAAAAAAIAA=</HashCode>
+      <FileName>NHATSApi\NHATSApiService\DataHandling\NHATSDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NHATSApi.NHATSApiService.DataHandling.NHATSRoot">
+    <Position X="1.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAAAAABAAAAAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>NHATSApi\NHATSApiService\DataHandling\NHATSModel.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="signature" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="NHATSApi.NHATSApiService.DataHandling.Signature">
+    <Position X="1.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>NHATSApi\NHATSApiService\DataHandling\NHATSModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NHATSApi.NHATSApiService.DataHandling.Datum">
+    <Position X="10" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgCACQCCAAAQAACIAMAAgABIAAAAIAAAQCAAAAACAAI=</HashCode>
+      <FileName>NHATSApi\NHATSApiService\DataHandling\NHATSModel.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="min_dv" />
+      <Property Name="min_dur" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="NHATSApi.NHATSApiService.DataHandling.Min_Dv">
+    <Position X="3" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>NHATSApi\NHATSApiService\DataHandling\NHATSModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NHATSApi.NHATSApiService.DataHandling.Min_Dur">
+    <Position X="3" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>NHATSApi\NHATSApiService\DataHandling\NHATSModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NHATSApi.NHATSApiService.DataHandling.NHATSSpecificRoot">
+    <Position X="4.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACADSCCAAAQAACIAMAAgABIAAAAIAAAQCAAAAACAAI=</HashCode>
+      <FileName>NHATSApi\NHATSApiService\DataHandling\NHATSSpecificObjectModel.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="min_dv" />
+      <Property Name="min_dur" />
+      <Property Name="min_dur_traj" />
+      <Property Name="signature" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="NHATSApi.NHATSApiService.DataHandling.Minimum_Dv">
+    <Position X="3" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>NHATSApi\NHATSApiService\DataHandling\NHATSSpecificObjectModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NHATSApi.NHATSApiService.DataHandling.Min_Dv_Traj">
+    <Position X="13.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABhAAAAAABgAIAAIAIBAAAAACAgAAAAgBACAQAAAEAA=</HashCode>
+      <FileName>NHATSApi\NHATSApiService\DataHandling\NHATSSpecificObjectModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NHATSApi.NHATSApiService.DataHandling.Minimum_Dur">
+    <Position X="1.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>NHATSApi\NHATSApiService\DataHandling\NHATSSpecificObjectModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NHATSApi.NHATSApiService.DataHandling.Min_Dur_Traj">
+    <Position X="1" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABhAAAAAABgAIAAIAIBAAAAACAgAAAAgBACAQAAAEAA=</HashCode>
+      <FileName>NHATSApi\NHATSApiService\DataHandling\NHATSSpecificObjectModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NHATSApi.NHATSApiService.DataHandling.Signatures">
+    <Position X="3" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>NHATSApi\NHATSApiService\DataHandling\NHATSSpecificObjectModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NHATSApi.NHATSApiService.HTTPManager.NHATSAPIManager">
+    <Position X="6.75" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAEBAAAAAA=</HashCode>
+      <FileName>NHATSApi\NHATSApiService\HTTPManager\NHATSAPIManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NHATSApi.NHATSApiService.NHATSAPIServices">
+    <Position X="8.5" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAAAAAAABAAQAAAABAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>NHATSApi\NHATSApiService\NHATSAPIServices.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NHATSApi.Tests.NHATSSpecificAsteroidTests">
+    <Position X="11.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>RAAAAACQIAAgABAAAEAAAAAAQQQsIAAAAEAEABEIEAA=</HashCode>
+      <FileName>NHATSApi\Tests\NHATSSpecificAsteroidTests.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NHATSApi.Tests.NHATSTestParameter">
+    <Position X="6.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAECAwgAQAAAAAAAAAAIAAQAABAAJAAQAAAAAAAAA=</HashCode>
+      <FileName>NHATSApi\Tests\NHATSTestParameter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NHATSApi.Tests.NHATSTests">
+    <Position X="8.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAQAAAAAAABEAIAAAAAAAAAAAAAAKIEAAAAAACAA=</HashCode>
+      <FileName>NHATSApi\Tests\NHATSTests.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

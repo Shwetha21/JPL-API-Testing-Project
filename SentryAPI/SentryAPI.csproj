@@ -84,6 +84,7 @@
       <Link>app.config</Link>
     </None>
     <None Include="packages.config" />
+    <None Include="SentryAPIClassDiagram.cd" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\JPL_API_Library\JPL API Library.csproj">

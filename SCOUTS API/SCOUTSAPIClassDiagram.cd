@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ScoutDataApi.ScoutDataApiService.DataHandling.ScoutDTO">
+    <Position X="3" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>ScoutDataApi\ScoutDataApiService\DataHandling\ScoutDTO.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="ScoutData" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ScoutDataApi.ScoutDataApiService.DataHandling.ScoutRoot">
+    <Position X="6.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAAAAABAAAAAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>ScoutDataApi\ScoutDataApiService\DataHandling\ScoutModel.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="signature" />
+      <Property Name="data" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ScoutDataApi.ScoutDataApiService.DataHandling.Signature">
+    <Position X="5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ScoutDataApi\ScoutDataApiService\DataHandling\ScoutModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ScoutDataApi.ScoutDataApiService.DataHandling.Datum">
+    <Position X="11.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEgkAIIAAAAABCAAAAkACAgQAABBABBAAAIFAAIII=</HashCode>
+      <FileName>ScoutDataApi\ScoutDataApiService\DataHandling\ScoutModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ScoutDataApi.ScoutDataApiService.HTTPManager.ScoutAPIManager">
+    <Position X="3" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>ScoutDataApi\ScoutDataApiService\HTTPManager\ScoutDataApiManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ScoutDataApi.ScoutDataApiService.ScoutDataAPIService">
+    <Position X="8.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAAAAAAEAAAAAAAAAAAAAAAAAACAAEAAAA=</HashCode>
+      <FileName>ScoutDataApi\ScoutDataApiService\ScoutDataApiService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="JPL_API_Testing.ScoutTests">
+    <Position X="4.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAACAAAAAAACAAAAAIAAAAAAEAAAA=</HashCode>
+      <FileName>ScoutDataApi\Tests\ScoutTests.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
