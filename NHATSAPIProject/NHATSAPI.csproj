@@ -75,7 +75,7 @@
     <None Include="..\JPL_API_Library\app.config">
       <Link>app.config</Link>
     </None>
-    <None Include="NHATSClassDiagram.cd" />
+    <None Include="NHATSAPIClassDiagram.cd" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
