@@ -12,6 +12,7 @@ namespace NHATSApi.Tests
         private NHATSAPIServices _invalidnhats = new NHATSAPIServices("134");
         private NHATSAPIServices _nHATSAPIServices = new NHATSAPIServices("2016%20TB18");
 
+        
         [Test]
         public void CheckingWhetherTheDataObtainedIsOf2000SG344Asteroid()
         {
@@ -42,12 +43,14 @@ namespace NHATSApi.Tests
             Assert.That(nHATSAPIServices.nhatsDTO.NHATSSpecificData.h, Is.GreaterThan("15"));
         }
 
+        //occ value determine how well the orbit is defined value range from 0-8
         [Test]
         public void ChechingForTheValueOfOCC()
         {
             Assert.That(nHATSAPIServices.nhatsDTO.NHATSSpecificData.occ, Is.EqualTo("3"));
         }
 
+       //launch Window - time duration suitable for launching the space mission to study the asteroid. 
         [Test]
         public void CheckingForThelaunchDate()
         {
@@ -78,6 +81,7 @@ namespace NHATSApi.Tests
             Assert.That(_nhatsServiceforOrpheus.nhatsDTO.NHATSSpecificData.min_dv_traj.dur_total, Is.EqualTo("362"));
         }
 
+        // h is a magnitude value of a lminosity
         [Test]
         public void CheckingWhetherHvalueofOrpheusIsGreatetThan15ToConsiderNEAASNHATS()
         {
@@ -96,12 +100,14 @@ namespace NHATSApi.Tests
             Assert.That(_nhatsServiceforOrpheus.nhatsDTO.NHATSSpecificData.min_dur_traj.launch, Is.EqualTo("2021-11-15"));
         }
 
+        // status- 400 for bad response
         [Test]
         public void CheckingForBadRequestresponseWhentheDesValueIsNull()
         {
             Assert.That(_nhatsservivenullasteroid.nhatsData, Does.Contain("400"));
         }
 
+        // Checking for the error message for bad request
         [Test]
         public void CheckingFortheMessageForBadResponse()
         {
@@ -114,18 +120,21 @@ namespace NHATSApi.Tests
             Assert.That(_invalidnhats.nhatsData, Does.Contain("specified NHATS object not found"));
         }
 
+        //checking for Degree of arrival
         [Test]
         public void CheckingForAnglrofArrival()
         { 
             Assert.That(_nHATSAPIServices.nhatsDTO.NHATSSpecificData.min_dv_traj.dec_arr, Is.Not.Null); ;
         }
 
+        //Checking for degree of departure
         [Test]
         public void CheckingforAngleofDeparture()
         {
             Assert.That(_nHATSAPIServices.nhatsDTO.NHATSSpecificData.min_dv_traj.dec_dep, Is.Not.Null);
         }
 
+        //dur_at - Duration at which the space mission stays with the asteroid
         [Test]
         public void CheckingforPropertyDurationAt()
         {
