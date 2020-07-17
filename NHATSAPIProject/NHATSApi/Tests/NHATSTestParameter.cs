@@ -19,12 +19,14 @@ namespace NHATSApi.Tests
             Assert.That(_nhatsSerivice.nhatsDTO.NHATSSpecificData.des, Is.EqualTo("2016 TB18"));
         }
 
+        //dv- delta velocity
         [Test]
         public void CheckingForErrorMessageWhenvelocityvalueis0()
         {
             Assert.That(nhatsSerivice.nhatsData, Does.Contain("invalid DV mode value (expecting 4 5 6 7 8 9 10 11 12)"));
         }
 
+        //stay - stay duration of the sapce mission with the asteroid
         [Test]
         public void CheckingForErrorMessageWhenStayis0()
         {
