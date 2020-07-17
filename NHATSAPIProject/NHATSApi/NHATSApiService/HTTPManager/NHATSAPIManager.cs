@@ -33,5 +33,12 @@ namespace NHATSApi.NHATSApiService.HTTPManager
             var response = client.Execute(request, Method.GET);
             return response.Content;
         }
+
+        public string GetNearEarthOrbitData(string launch,string stay)
+        {
+            var request = new RestRequest($"nhats.api?launch={launch}&stay={stay}");
+            var response = client.Execute(request, Method.GET);
+            return response.Content;
+        }
     }
 }
